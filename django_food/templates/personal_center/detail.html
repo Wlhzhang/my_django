@@ -1,38 +1,28 @@
-<!doctype html>
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="keywords" content="">
-<meta name="description" content="mezz">
-<meta name="author" content="mezz">
-<link href="css/css.css" rel="stylesheet">
-<link href="css/chosen.css" rel="stylesheet">
-<link href="css/slick.css" rel="stylesheet">
-<!--[if lt IE 9]>
-    <link href="css/ie.css" rel="stylesheet" type="text/css" >
-    <meta http-equiv="X-UA-Compatible" content="IE=8" >
-<![endif]-->
-<!--[if lte IE 6]><meta http-equiv="refresh" content="0;url=IE6/IE6.html"><![endif]-->
-<link href="favicon.ico" rel="SHORTCUT ICON">
-<title>17素材·私厨 - 为你推荐遍布全球最新鲜，最与众不同的顶级生活方式</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    {% include 'common/public_css_js.html' %}
 </head>
 <body>
 <div class="head">
   <div class="wrap clearfix">
-    <a href="index.html" class="logo indent">logo</a>
+    <p class="logo indent">logo</p>
     <div class="headr fr">
-      <form action="active.html" method="post" class="headsearch">
+      <form action="../active.html" method="post" class="headsearch">
         <label class="label">
           <input type="text" value="" name="" class="key">
           <span class="text">搜索地址、名称、时间等</span>
         </label>
         <button type="submit" class="button btn-search">&#xe628;</button>
       </form>
-      <a href="polls/login.html">登录</a><a href="polls/reg.html">注册</a><a href="#">发布我的饭局</a>
+      <a href="../polls/login.html">登录</a><a href="../polls/register.html">注册</a><a href="#">发布我的饭局</a>
     </div>
   </div>
 </div>
 <div class="detail-banner">
-  <div class="item" style="background-image:url(upload/img23.jpg);">
+  <div class="item" style="background-image:url(/static/upload/img23.jpg);">
     <div class="wrap">
       <div class="tbg"></div>
       <div class="txt">
@@ -42,7 +32,7 @@
       </div>
     </div>
   </div>
-  <div class="item" style="background-image:url(images/img4.jpg);">
+  <div class="item" style="background-image:url(/static/images/img4.jpg);">
     <div class="wrap">
       <div class="tbg"></div>
       <div class="txt">
@@ -72,7 +62,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 <div class="wrap mt40">
   <div class="detail-box">
     <dl class="lebox">
-      <dt class="img"><img src="upload/img24.jpg"></dt>
+      <dt class="img"><img src="/static/upload/img24.jpg"></dt>
       <dd>目的地介绍 | INTRODUCTION</dd>
     </dl>
     <h1>简咖啡</h1>
@@ -83,7 +73,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 
 <div class="wrap mt40 clearfix">
   <div class="Publisher mt10 fl">
-    <a href="#" class="user-img"><img src="upload/img25.png"></a>
+    <a href="#" class="user-img"><img src="/static/upload/img25.png"></a>
     <div class="user-level tc">大郭郭呐 <em></em><em></em><em></em></div>
     <p class="tc"><a href="javascript:;" class="button btn-follow"> + 关注</a></p>
     <div class="pd10">
@@ -102,15 +92,15 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
     <div class="bd">
       <table>
         <tr>
-          <th><img src="images/l.png"></th>
+          <th><img src="/static/images/l.png"></th>
           <td><p class="c999">活动地址</p>陕西南路35号雅克红房子5楼200 米</td>
         </tr>
         <tr>
-          <th><img src="images/time.png"></th>
+          <th><img src="/static/images/time.png"></th>
           <td><p class="c999">活动时间</p>1月27日(周二)11:00 到 2月13日(周五)21:00</td>
         </tr>
         <tr>
-          <th><img src="images/wf.png"></th>
+          <th><img src="/static/images/wf.png"></th>
           <td><p class="c999">活动玩法</p><a href="#" target="_blank">先到先得</a>    <a href="#" target="_blank">双向选择</a>    <a href="#" target="_blank">大数据匹配</a></td>
         </tr>
       </table>
@@ -132,7 +122,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
         <em>秒</em>/Second
       </li>
     </ul>
-    <a href="Sign_up.html" class="button btn-apply">立即申请</a><a href="#" class="button btn-enj">感兴趣<span class="f12">(4人)</span></a>
+    <a href="../dining_center/Sign_up.html" class="button btn-apply">立即申请</a><a href="#" class="button btn-enj">感兴趣<span class="f12">(4人)</span></a>
     <div class="title tc pd10 f12">已经有<span>6</span>人报名</div>
   </div>
   
@@ -140,34 +130,34 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 
 <div class="registbox mt40">
   <div class="wrap">
-    <p class="tc" style="padding-top:60px;"><img src="images/imgrs.jpg"></p>
+    <p class="tc" style="padding-top:60px;"><img src="/static/images/imgrs.jpg"></p>
     <div class="regster">
       <dl>
-        <dt><a href="#"><img src="upload/img12.png"></a></dt>
+        <dt><a href="#"><img src="/static/upload/img12.png"></a></dt>
         <dd><a href="#">大郭郭呐</a></dd>
       </dl>
       <dl>
-        <dt><a href="#"><img src="upload/img15.jpg"></a></dt>
+        <dt><a href="#"><img src="/static/upload/img15.jpg"></a></dt>
         <dd><a href="#">小七姑娘</a></dd>
       </dl>
       <dl>
-        <dt><a href="#"><img src="upload/img16.png"></a></dt>
+        <dt><a href="#"><img src="/static/upload/img16.png"></a></dt>
         <dd><a href="#">Bear</a></dd>
       </dl>
       <dl>
-        <dt><a href="#"><img src="upload/img17.png"></a></dt>
+        <dt><a href="#"><img src="/static/upload/img17.png"></a></dt>
         <dd><a href="#">于_小妖</a></dd>
       </dl>
       <dl>
-        <dt><a href="#"><img src="upload/img18.png"></a></dt>
+        <dt><a href="#"><img src="/static/upload/img18.png"></a></dt>
         <dd><a href="#">花闻着_xiang</a></dd>
       </dl>
       <dl>
-        <dt><a href="#"><img src="upload/img26.png"></a></dt>
+        <dt><a href="#"><img src="/static/upload/img26.png"></a></dt>
         <dd><a href="#">梦小茉茉</a></dd>
       </dl>
       <dl>
-        <dt><a href="#"><img src="upload/img26.png"></a></dt>
+        <dt><a href="#"><img src="/static/upload/img26.png"></a></dt>
         <dd><a href="#">梦小茉茉</a></dd>
       </dl>
     </div>
@@ -186,73 +176,73 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
    <div class="plmcomment mt20">
         <ul class="comment-list">
           <li class="np-post">
-            <a href="home.html" class="fans img"><img src="upload/img12.png"></a>
+            <a href="../home.html" class="fans img"><img src="/static/upload/img12.png"></a>
             <div class="post-body">
               <div class="post-header clearfix">
-                <a href="home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
+                <a href="../home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
               </div>
               <div class="post-content">小编听闻你差一步就报名成功第24期体验了，9成的精力已经付出，开启生活另一种可能的机会就藏在最后1成时间里，如遇到任何问题，可以发私信给我哦，我会第一时间回复你的！</div>
             </div>
           </li>
           <li class="np-post">
-            <a href="home.html" class="fans img"><img src="upload/img12.png"></a>
+            <a href="../home.html" class="fans img"><img src="/static/upload/img12.png"></a>
             <div class="post-body">
               <div class="post-header clearfix">
-                <a href="home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
+                <a href="../home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
               </div>
               <div class="post-content">小编听闻你差一步就报名成功第24期体验了，9成的精力已经付出，开启生活另一种可能的机会就藏在最后1成时间里，如遇到任何问题，可以发私信给我哦，我会第一时间回复你的！</div>
             </div>
           </li>
           <li class="np-post">
-            <a href="home.html" class="fans img"><img src="upload/img12.png"></a>
+            <a href="../home.html" class="fans img"><img src="/static/upload/img12.png"></a>
             <div class="post-body">
               <div class="post-header clearfix">
-                <a href="home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
+                <a href="../home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
               </div>
               <div class="post-content">小编听闻你差一步就报名成功第24期体验了，9成的精力已经付出，开启生活另一种可能的机会就藏在最后1成时间里，如遇到任何问题，可以发私信给我哦，我会第一时间回复你的！</div>
             </div>
           </li>
           <li class="np-post">
-            <a href="home.html" class="fans img"><img src="upload/img12.png"></a>
+            <a href="../home.html" class="fans img"><img src="/static/upload/img12.png"></a>
             <div class="post-body">
               <div class="post-header clearfix">
-                <a href="home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
+                <a href="../home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
               </div>
               <div class="post-content">小编听闻你差一步就报名成功第24期体验了，9成的精力已经付出，开启生活另一种可能的机会就藏在最后1成时间里，如遇到任何问题，可以发私信给我哦，我会第一时间回复你的！</div>
             </div>
           </li>
           <li class="np-post">
-            <a href="home.html" class="fans img"><img src="upload/img12.png"></a>
+            <a href="../home.html" class="fans img"><img src="/static/upload/img12.png"></a>
             <div class="post-body">
               <div class="post-header clearfix">
-                <a href="home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
+                <a href="../home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
               </div>
               <div class="post-content">小编听闻你差一步就报名成功第24期体验了，9成的精力已经付出，开启生活另一种可能的机会就藏在最后1成时间里，如遇到任何问题，可以发私信给我哦，我会第一时间回复你的！</div>
             </div>
           </li>
           <li class="np-post">
-            <a href="home.html" class="fans img"><img src="upload/img12.png"></a>
+            <a href="../home.html" class="fans img"><img src="/static/upload/img12.png"></a>
             <div class="post-body">
               <div class="post-header clearfix">
-                <a href="home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
+                <a href="../home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
               </div>
               <div class="post-content">小编听闻你差一步就报名成功第24期体验了，9成的精力已经付出，开启生活另一种可能的机会就藏在最后1成时间里，如遇到任何问题，可以发私信给我哦，我会第一时间回复你的！</div>
             </div>
           </li>
           <li class="np-post">
-            <a href="home.html" class="fans img"><img src="upload/img12.png"></a>
+            <a href="../home.html" class="fans img"><img src="/static/upload/img12.png"></a>
             <div class="post-body">
               <div class="post-header clearfix">
-                <a href="home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
+                <a href="../home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
               </div>
               <div class="post-content">小编听闻你差一步就报名成功第24期体验了，9成的精力已经付出，开启生活另一种可能的机会就藏在最后1成时间里，如遇到任何问题，可以发私信给我哦，我会第一时间回复你的！</div>
             </div>
           </li>
           <li class="np-post">
-            <a href="home.html" class="fans img"><img src="upload/img12.png"></a>
+            <a href="../home.html" class="fans img"><img src="/static/upload/img12.png"></a>
             <div class="post-body">
               <div class="post-header clearfix">
-                <a href="home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
+                <a href="../home.html" class="name">兜帽家的豆豆</a><span class="user-level"><em></em><em></em><em></em></span> 18分钟前<span class="reply"><em class="myfont">&#xe640;</em><a href="javascript:;"> 回复</a></span>
               </div>
               <div class="post-content">小编听闻你差一步就报名成功第24期体验了，9成的精力已经付出，开启生活另一种可能的机会就藏在最后1成时间里，如遇到任何问题，可以发私信给我哦，我会第一时间回复你的！</div>
             </div>
@@ -308,17 +298,14 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
         </ul>
       </div>
       <div class="fr">
-        <img src="images/img2.jpg">
-        <img src="images/img3.jpg">
+        <img src="/static/images/img2.jpg">
+        <img src="/static/images/img3.jpg">
       </div>
     </div>
     <div class="gotop">&#xe608;</div>
   </div>
 <div class="foot tc">Copyright © 2003-2015 17素材, All Rights Reserved</div>  
 
-<script src="js/jquery.js"></script>
-<script src="js/Action.js"></script>
-<script src="js/slick.js"></script>
 <script>
 $(function(){
 	$('.detail-banner').slick({
@@ -338,4 +325,5 @@ $(function(){
 	});
 })
 </script>
+</body>
 </html>

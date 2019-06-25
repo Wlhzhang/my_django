@@ -16,11 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path, include
 
-from django_food.views import index
+from django_food.views import index, home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path('^$',index,name='index'),
+    path('home/', home, name='home'),
     path('polls/', include(('polls.urls', 'polls'), namespace='polls')),
+    path('person/', include(('person.urls', 'person'), namespace='person')),
+    path('dinner/', include(('dinner.urls', 'person'), namespace='dinner')),
 
 ]

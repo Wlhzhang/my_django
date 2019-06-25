@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    {% include 'common/public_css_js.html' %}
+</head>
+<body>
+<div class="head">
+    <div class="wrap clearfix">
+        <a href="/" class="logo indent">logo</a>
+        <div class="headr fr">
+            <form action="" method="post" enctype="multipart/form-data" class="headsearch">
+                <label class="label">
+                    <input type="text" value="" name="" class="key">
+                    <span class="text">搜索地址、名称、时间等</span>
+                </label>
+                <button type="submit" class="button btn-search">&#xe628;</button>
+            </form>
+            <a href="/polls/login/">登录</a><a href="/polls/register/">注册</a><a href="#">发布我的饭局</a>
+        </div>
+    </div>
+</div>
+<div class="loginwrapper">
+    <div class="wrap pr">
+        <div class="loginbox">
+            <h1 class="hd">用户注册</h1>
+            <div class="tc" style="margin-top:-10px;"><img src="/static/images/regtxt.png"></div>
+            <form class="boxbd mt20" id="register_form" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label class="label" style="display: block;margin-bottom: 20px">
+                    <input type="text" name="username" class="loginipt key Nickname" placeholder="请输入您的用户名">
+                    <span id="error_one"></span>
+                </label>
+                 <label class="label" style="display: block;margin-bottom: 20px">
+                    <input type="text" name="email" class="loginipt key user" placeholder="请输入您的邮箱">
+                     <span id="error_one"></span>
+                </label>
+                <label class="label" style="display: block;margin-bottom: 20px">
+                    <input type="text" name="password1" class="loginipt key pwd" placeholder="请设置您的密码">
+                </label>
+                <label class="label" style="display: block;margin-bottom: 20px">
+                    <input type="password" name="password2"  class="loginipt key pwd" placeholder="请重复输入您的密码">
+                    <span id="error_two"></span>
+                </label>
+                <input type="button" id="register_button" value="立即注册" class="button btn-reg">
+                <p class="mt20 tc">注册则表示同意<a href="#" class="o">《会员条款》</a></p>
+            </form>
+            <p class="boxbd tr">已有帐号？<a href="/polls/login/" class="o">登陆</a></p>
+        </div>
+    </div>
+</div>
+<div class="foot2">
+    <div class="wrap clearfix">
+        <div class="txt fl">
+            <div class="foot-nav"><a href="#">关于17素材</a>/<a href="#">加入我们</a>/<a href="#">联系我们</a>/<a href="#">媒体报道</a>/<a
+                    href="#">会员条款</a>/<a href="#">版权声明</a></div>
+            Copyright © 2003-2015 17素材, All Rights Reserved　
+        </div>
+        <div class="orc fr"><img src="/static/images/img2.jpg"><img src="/static/images/img3.jpg"></div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('#register_button').click(function () {
+             $.ajax({
+                url:'/polls/register/',
+                type:'post',
+                data:new FormData($('#register_form')[0]),
+                 cache:false,
+                 processData:false,
+                 contentType:false,
+                 success:function (data) {
+                     if(data.status == 'success'){
+                         alert('注册成功，去登陆');
+                         window.location.href = '/polls/login/'
+                     }else if (data.status == 'password_fail'){
+                         $('#error_two').text(data.msg)
+                     } else if (data.status == 'form_error') {
+                         $('#error_two').text(data.msg)
+                     }
+                 }
+            })
+        })
+    })
+</script>
+</body>
+</html>

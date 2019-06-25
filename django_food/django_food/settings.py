@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls'
+    'polls',
+    'person',
+    'dinner'
 ]
 
 MIDDLEWARE = [
@@ -71,18 +73,28 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'django_food.wsgi.application'
 
-
+SESSION_ENGINE="django.contrib.sessions.backends.file"
+SESSION_FILE_PATH="C:\session"
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_food',
+        'USER':'root',
+        'PASSWORD':'142857',
+        'HOST':'127.0.0.1',
+        'PORT':3306
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -123,3 +135,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR,'static')
 ]
+
+AUTH_USER_MODEL = 'polls.MyUser'
+
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR,"media")
