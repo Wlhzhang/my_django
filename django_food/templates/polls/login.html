@@ -27,14 +27,20 @@
     <div class="wrap pr">
         <div class="loginbox">
             <h1 class="hd">用户登录</h1>
-            <form class="boxbd">
+            <form action="" class="boxbd" id="login_form" enctype="application/x-www-form-urlencoded" method="post">
+                {% csrf_token %}
                 <label class="label">
-                    <input type="text" name="login_username" value="" class="loginipt user" placeholder="请输入您的用户名">
+                    <input type="text" name="username" value="" class="loginipt user" placeholder="请输入您的用户名" >
                 </label>
                 <label class="label">
-                    <input type="password" name="login_password" value="" class="loginipt pwd" placeholder="请输入您的密码">
+                    <input type="password" name="password" value="" class="loginipt pwd" placeholder="请输入您的密码" style="margin-top: 15px">
                 </label>
-                <input type="button" name="login_button" value="登录" class="button btn-login">
+            <span class="label" style="margin-top: 25px">
+                <input type="text" name="cache_code" placeholder="输入验证码"  style="width: 124px;height: 30px">
+                <img src="/polls/get_code/" id="code_img" style="width: 124px;height:40px ">
+            </span>
+                <span id="my_error" style=" margin-top: 13px;position: absolute;"></span>
+                <input type="button" id="login_button" value="登录" class="button btn-login" style="margin-top: 40px">
                 <p class="mt20">
                     <label for="remember">
                         <input name="" type="checkbox" id="remember" value="" checked> 记住我
@@ -43,7 +49,6 @@
                 </p>
                 <p class="mt10 tr">还没有账号？<a href="/polls/register/" class="o">注册</a></p>
             </form>
-
         </div>
     </div>
 </div>
@@ -59,8 +64,27 @@
 </div>
 </body>
 <script>
-
-
-
+    var cache=window.document.getElementById('code_img');
+    cache.onclick=function() {
+        this.src = "/polls/get_code/?rnd=" + Math.random();
+    };
+    $('#login_button').click(function () {
+        $.ajax({
+            url:'/polls/login/',
+            type:'post',
+            data:new FormData($('#login_form')[0]),
+            cache:false,
+            processData:false,
+            contentType:false,
+            success: function (data) {
+                if(data.status=='fail'){
+                    $('#my_error').text(data.msg)
+                }else if(data.status=='success'){
+                    alert('登录成功');
+                    window.location.href='/home/';
+                }
+            }
+        })
+    })
 </script>
 </html>

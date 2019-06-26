@@ -2,49 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="734fab75-646e-495a-a902-e6a13a958072" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dinner/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dinner/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/person/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/person/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polls/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polls/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/polls/forget_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/cache_img.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/cerepf.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_food/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_food/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_food/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_food/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_food/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_food/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Dinner.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Dinner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Email-binding.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Host.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Host.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Management.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Management.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Message.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/Message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/My_Messages.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/My_Messages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Operating.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Release.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Release.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Sign_up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Success.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Verified-bind-done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/Verified-bind-done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Verified.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/active.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/active.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/applyhost.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/applyhost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/binding.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fans.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/fans.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forgot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/forgot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forgot2.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/phone-bind-done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/Phone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/polls/forget_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/forget_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/polls/forgot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/forgot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/polls/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/mem.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/mem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/pwd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/upfiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/upfiles.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,40 +27,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/polls/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="50" />
-              <folding>
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polls/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="28" column="9" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_food/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="138" column="27" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+            <state relative-caret-position="270">
+              <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,10 +41,40 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/polls/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="678">
+              <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/polls/forget_password.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-648">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,11 +83,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="557">
+              <caret line="36" column="52" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="52" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/polls/forgot.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -164,9 +145,7 @@
         <option value="$PROJECT_DIR$/templates/polls/pwd.html" />
         <option value="$PROJECT_DIR$/templates/forgetpsw/forgot.html" />
         <option value="$PROJECT_DIR$/templates/polls/change_password.html" />
-        <option value="$PROJECT_DIR$/templates/polls/forget_password.html" />
         <option value="$PROJECT_DIR$/django_food/views.py" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/dining_center/Dinner.html" />
         <option value="$PROJECT_DIR$/templates/dining_center/Management.html" />
         <option value="$PROJECT_DIR$/templates/dining_center/Release.html" />
@@ -189,21 +168,25 @@
         <option value="$PROJECT_DIR$/django_food/urls.py" />
         <option value="$PROJECT_DIR$/templates/mem.html" />
         <option value="$PROJECT_DIR$/templates/personal_center/mem.html" />
-        <option value="$PROJECT_DIR$/templates/polls/login.html" />
-        <option value="$PROJECT_DIR$/polls/urls.py" />
-        <option value="$PROJECT_DIR$/django_food/settings.py" />
+        <option value="$PROJECT_DIR$/templates/polls/register.html" />
         <option value="$PROJECT_DIR$/polls/models.py" />
         <option value="$PROJECT_DIR$/polls/forms.py" />
-        <option value="$PROJECT_DIR$/templates/polls/register.html" />
+        <option value="$PROJECT_DIR$/django_food/settings.py" />
+        <option value="$PROJECT_DIR$/polls/cache_img.py" />
+        <option value="$PROJECT_DIR$/templates/polls/login.html" />
+        <option value="$PROJECT_DIR$/templates/polls/forget_password.html" />
+        <option value="$PROJECT_DIR$/templates/polls/forgot.html" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/polls/views.py" />
+        <option value="$PROJECT_DIR$/polls/urls.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="872" />
-    <option name="y" value="59" />
-    <option name="width" value="974" />
-    <option name="height" value="741" />
+    <option name="x" value="683" />
+    <option name="y" value="162" />
+    <option name="width" value="1307" />
+    <option name="height" value="723" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -222,46 +205,12 @@
             <path>
               <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
               <item name="polls" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="polls" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="personal_center" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="polls" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -273,7 +222,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -282,15 +231,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\polls" />
       <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates\polls" />
       <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates\personal_center" />
       <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates\dining_center" />
       <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates\forgetpsw" />
-      <recent name="E:\GitHub\my_django\django_food\templates\polls" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,22 +292,32 @@
       <updated>1561370097049</updated>
       <workItem from="1561370099383" duration="586000" />
       <workItem from="1561377301912" duration="6754000" />
+      <workItem from="1561511572656" duration="8644000" />
     </task>
+    <task id="LOCAL-00001" summary="注册成功，回去做登陆">
+      <created>1561456822440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561456822440</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30402000" />
+    <option name="totallyTimeSpent" value="39349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37852496" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37093276" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23969631" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.18655097" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -380,22 +339,22 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="注册成功，回去做登陆" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册成功，回去做登陆" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/polls/views.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/images/txt1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/chosen.jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="1200" column="14" lean-forward="true" selection-start-line="1200" selection-start-column="14" selection-end-line="1200" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -457,23 +416,6 @@
             <element signature="n#style#0;n#select#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/polls/forgot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" selection-start-line="41" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/polls/forget_password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1716">
-          <caret line="86" column="6" lean-forward="true" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
-          <folding>
-            <element signature="e#652#658#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,26 +587,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/personal_center/phone-bind-done.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="7" />
-          <folding>
-            <element signature="e#515#521#0#HTML" expanded="true" />
-            <element signature="e#521#527#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#em#0;n#p#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/personal_center/phone-bind-done.html" />
     <entry file="file://$PROJECT_DIR$/templates/personal_center/upfiles.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -723,24 +646,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="47" selection-start-line="47" selection-end-line="127" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#2883#2889#0#HTML" expanded="true" />
-            <element signature="e#2889#2895#0#HTML" expanded="true" />
-            <element signature="e#2895#2901#0#HTML" expanded="true" />
-            <element signature="e#2901#2907#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#td#0;n#tr#5;n#table#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#1;n#td#0;n#tr#5;n#table#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#2;n#td#0;n#tr#5;n#table#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mem.html" />
     <entry file="file://$PROJECT_DIR$/templates/personal_center/mem.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-756">
@@ -757,60 +663,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Program Files/virtualenvhome/temp/Lib/site-packages/requests/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_food/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3162">
+          <caret line="141" column="10" lean-forward="true" selection-start-line="141" selection-start-column="10" selection-end-line="141" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/polls/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-385">
+          <caret line="45" column="56" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/cache_img.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+          <folding>
+            <element signature="e#333#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/polls/forget_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/polls/forgot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/polls/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="459">
+          <caret line="83" column="43" lean-forward="true" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_food/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="138" column="27" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+        <state relative-caret-position="270">
+          <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="557">
+          <caret line="36" column="52" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="52" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polls/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/polls/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="50" />
-          <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/polls/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="678">
+          <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
