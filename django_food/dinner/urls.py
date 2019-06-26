@@ -1,6 +1,6 @@
 from django.urls import path,re_path
 
-from dinner.views import join_dinner, management, Release, sing_up, sing_success
+from dinner.views import join_dinner, management, Release, sing_up, sing_success, dis_dinner
 
 urlpatterns=[
 
@@ -9,4 +9,7 @@ urlpatterns=[
     re_path(r'^release/$', Release.as_view(), name='release'),
     re_path(r'^sing_up/$', sing_up, name='sing_up'),
     re_path(r'^sing_success/$', sing_success, name='sing_success'),
+    re_path(r'^dis_dinner/$', dis_dinner, name='dis_dinner'),
+
+
 ]

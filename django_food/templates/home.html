@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <title>首页</title>
     {% include 'common/public_css_js.html' %}
+    <style>
+          .m-box > a, .m-box > span {
+        padding: 0 10px;
+        border: 1px solid;
+        margin: 5px;
+        text-decoration: none;
+        color: #bdbdbd;
+    }
+    .m-box > a:hover, .m-box > span:hover {
+        background-color: #4d99bf;
+    }
+    </style>
 </head>
 <body>
 <div class="head">
@@ -40,72 +52,22 @@
         <div class="location tr">
             <a href="/home/" class="current">首页</a>
             <a href="/dinner/management/">我的饭局</a>
-            <a href="follow.html">我的关注</a>
-            <a href="personal_center/My_Messages.html">我的留言</a>
         </div>
         <div class="message pd30">
-            <div class="plmain">
-                <div class="plm clearfix">
-                    <span class="fr">(您还可输入 <span id="textCount">90</span> 个字)</span>给TA留下一句话吧……
-                </div>
-                <div class="textarea_input">
-                    <textarea id="TextArea1" onkeyup="words_deal();"></textarea>
-                </div>
-                <div class="tool_submit tr">
-                    <button type="button" name="" value="" class="button sublist">留 言</button>
-                </div>
-            </div>
+{#            <div class="plmain">#}
+{#                <div class="plm clearfix">#}
+{#                    <span class="fr">(您还可输入 <span id="textCount">90</span> 个字)</span>给TA留下一句话吧……#}
+{#                </div>#}
+{#                <div class="textarea_input">#}
+{#                    <textarea id="TextArea1" onkeyup="words_deal();"></textarea>#}
+{#                </div>#}
+{#                <div class="tool_submit tr">#}
+{#                    <button type="button" name="" value="" class="button sublist">留 言</button>#}
+{#                </div>#}
+{#            </div>#}
 
             <div class="plmcomment mt30">
-                <ul class="comment-list">
-                    <li class="np-post">
-                        <a href="home.html" class="fans img"><img src="/static/upload/img12.png"></a>
-                        <div class="post-body">
-                            <div class="post-header clearfix">
-                                <a href="home.html" class="name">大郭郭呐</a>发布了 no.01期活动
-                            </div>
-                            <div class="Participate children">
-                                <div class="item">
-                                    <div class="bd">
-                                        <div class="Activity-img img"><img src="/static/upload/img14.jpg"></div>
-                                        <div class="txt">
-                                            <div class="title">价值350元高级自助餐免费抢！</div>
-                                            <div class="info">
-                                                最近，因为各种事，总是会觉得有些委屈，有些难过，也会掉泪，甚至觉得自己不能够好好的活着，偶然看到写着“活着”这两个字，我想知道，郝云的专辑里是否蕴藏...
-                                            </div>
-                                            <p class="mt10"><a href="#" target="_blank">先到先得</a> <a href="#"
-                                                                                                    target="_blank">双向选择</a>
-                                                <a href="#" target="_blank">大数据匹配</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="np-post">
-                        <a href="home.html" class="fans img"><img src="/static/upload/img12.png"></a>
-                        <div class="post-body">
-                            <div class="post-header clearfix">
-                                <a href="home.html" class="name">大郭郭呐</a>发布了 no.01期活动
-                            </div>
-                            <div class="Participate children">
-                                <div class="item">
-                                    <div class="bd">
-                                        <div class="Activity-img img"><img src="/static/upload/img14.jpg"></div>
-                                        <div class="txt">
-                                            <div class="title">价值350元高级自助餐免费抢！</div>
-                                            <div class="info">
-                                                最近，因为各种事，总是会觉得有些委屈，有些难过，也会掉泪，甚至觉得自己不能够好好的活着，偶然看到写着“活着”这两个字，我想知道，郝云的专辑里是否蕴藏...
-                                            </div>
-                                            <p class="mt10"><a href="#" target="_blank">先到先得</a> <a href="#"
-                                                                                                    target="_blank">双向选择</a>
-                                                <a href="#" target="_blank">大数据匹配</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                <ul class="comment-list" id="dinner_list">
                     <li class="np-post">
                         <a href="home.html" class="fans img"><img src="/static/upload/img12.png"></a>
                         <div class="post-body">
@@ -132,14 +94,13 @@
                     </li>
                 </ul>
                 <!--Pagination-->
-                <div class="page mt20 clearfix"><a href="#" class="prev"><em></em>上一页</a><span>1</span><a href="#">2</a><a
-                        href="#">3</a><a href="#">4</a>...<a href="#">23</a><a href="#" class="next">下一页<em></em></a>
+                <div class="m-box"></div>
+
+                <div class="page mt20 clearfix">
+
                 </div>
             </div>
-
         </div>
-
-
     </div>
     <div class="aside fr">
         <div class="pd15">
@@ -168,6 +129,7 @@
         </div>
     </div>
 </div>
+
 <script type="text/javascript">
     $(document).ready(function ($) {
         //select 样式美化
@@ -178,6 +140,55 @@
             $(selector).chosen(config[selector]);
         }
     });
+    $(function () {
+        getDinner(1, true);
+        count = 0;
+
+        function getDinner(page, init) {
+            $.ajax({
+                url: '/dinner/dis_dinner/',
+                data: {'page': page, 'total': 5},
+                type: 'get',
+                dataType: 'json',
+                success: function (response) {
+                    $('#dinner_list').html('');
+                    console.info(response.result.data)
+                    $.each(response.result.data, function (index, item) {
+                        count = response.result.count;
+                        var data = item;
+                        $('#dinner_list').append('<tr>\n' +
+                            '        <td>' + data + '</td>\n' +
+                            '        <td>' + data.user + '</td>\n' +
+                            '        <td>' + data.price + '</td>\n' +
+                            '        <td>' + data.activities_play + '</td>\n' +
+                            '        <td>' + data.intro + '</td>\n' +
+                            '        <td>' + data.executor + '</td>\n' +
+
+                            '    </tr>')
+                    });
+                    if (init == true) {
+                        initPage();
+                    }
+                }
+            })
+        }
+
+        function initPage() {
+            $('.m-box').pagination({
+                pageCount: count,
+                showData: 5,
+                coping: true,
+                homePage: '首页',
+                endPage: '末页',
+                prevContent: '上页',
+                nextContent: '下页',
+                callback: function (api) {
+                    getXiaoQue(api.getCurrent(), false)
+                }
+            });
+        }
+    })
+
 </script>
 </body>
 </html>
