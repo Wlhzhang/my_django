@@ -1,6 +1,6 @@
 from django.contrib import auth
 from django.http import JsonResponse, HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views import View
@@ -22,7 +22,7 @@ class Login(View):
         form = LoginForm(request.POST)
         if request.session['code'] == request.POST.get('cache_code',None):
             if form.is_valid():
-                user = auth.authenticate(username=form.cleaned_data['username'],password=form.cleaned_data['password'])
+                user = auth.authenticate(username=form.cleaned_data['username'],password=form.cleaned_data['password']) # 自动给你的user表自动校验
                 if user:
                     auth.login(request,user)
                     return JsonResponse({'status': 'success'})
@@ -33,8 +33,10 @@ class Login(View):
         else:
             return JsonResponse({'status':'fail','msg':'验证码错误'})
 
-
-
+# 退出登录
+def logout(request):
+    auth.logout(request)  #这一步就相当于直接session.flush()
+    return redirect('/')
 
 class Register(View):
     def get(self,request,*args,**kwargs):
@@ -65,7 +67,11 @@ class FindPassword(View):
         return render(request,'polls/forgot.html')
     def post(self,request,*args,**kwargs):
         user = MyUser.objects.all()
-        find_email = request.POST.get('')
+        find_email = request.POST.get('find_password_mail')
+        # if MyUser.email == find_email:
+        #     id = MyUser.
 
+        print(find_email)
+        return JsonResponse('000')
 
 

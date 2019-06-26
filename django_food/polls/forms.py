@@ -26,7 +26,7 @@ class MyUserForm(forms.ModelForm):
 
 class LoginForm(forms.Form):
         username = forms.CharField(max_length=30, min_length=4, required=True,
-                                   error_messages={'max_length': '用户名最大长度超出30个字符',
+                                   error_messages={'max_length': '用户名最大长度超出8个字符',
                                                    'min_length': '用户名最小长度至少为4个字符', })
         password = forms.CharField(max_length=30, min_length=5, required=True,
                                    error_messages={'max_length': '密码最大长度超出10个字符',
@@ -36,3 +36,8 @@ class LoginForm(forms.Form):
             if re.findall(regex,self.cleaned_data["username"]) is None:
                 raise forms.ValidationError('输入格式不正确')
             return self.cleaned_data["username"]
+        def clean_password(self):
+                regex=r'\w{5,10}'
+                if re.findall(regex,self.cleaned_data["password"]) is None:
+                    raise forms.ValidationError('输入格式不正确')
+                return self.cleaned_data["password"]

@@ -8,7 +8,7 @@
 <body>
 <div class="head">
     <div class="wrap clearfix">
-        <a href="index.html" class="logo indent">logo</a>
+        <a href="" class="logo indent">logo</a>
         <div class="headr fr">
             <form action="active.html" method="post" class="headsearch">
                 <label class="label">
@@ -17,16 +17,16 @@
                 </label>
                 <button type="submit" class="button btn-search">&#xe628;</button>
             </form>
-            <a href="#"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
+            <a href="/dinner/release/"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
             <div class="user">
-        <span class="clearfix"><span class="userimg"><img src="/static/upload/img12.png"><i></i></span>
+        <span class="clearfix"><span class="userimg"><img {{ request.user.head_image }}><i></i></span>
         <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
                 <ul class="topslide">
-                    <li><em>&#xe627;</em><a href="personal_center/mem.html">个人设置</a></li>
-                    <li><em>&#xe63d;</em><a href="personal_center/Message.html">消息中心<s>3</s></a></li>
-                    <li><em>&#xe63c;</em><a href="dining_center/Dinner.html">饭局管理</a></li>
-                    <li><em>&#xe63e;</em><a href="personal_center/fans.html">我的好友</a></li>
-                    <li><em>&#xe611;</em><a href="index.html">退出</a></li>
+                    <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
+                    <li><em>&#xe63d;</em><a href="/person/message/">消息中心<s>3</s></a></li>
+                    <li><em>&#xe63c;</em><a href="/dinner/join_dinner/">饭局管理</a></li>
+                    <li><em>&#xe63e;</em><a href="/person/fans/">我的好友</a></li>
+                    <li><em>&#xe611;</em><a href="/polls/logout/">退出</a></li>
                 </ul>
             </div>
         </div>
@@ -35,12 +35,11 @@
 
 <div class="mem-banner" style="background-image:url(/static/upload/img11.jpg);"></div>
 
-
 <div class="memwrap wrap clearfix">
     <div class="section fl">
         <div class="location tr">
             <a href="/home/" class="current">首页</a>
-            <a href="/home/">我的饭局</a>
+            <a href="/dinner/management/">我的饭局</a>
             <a href="follow.html">我的关注</a>
             <a href="personal_center/My_Messages.html">我的留言</a>
         </div>
@@ -142,11 +141,10 @@
 
 
     </div>
-
     <div class="aside fr">
         <div class="pd15">
-            <div class="userimg"><img src="/static/upload/img12.png"><i></i></div>
-            <div class="user-level tc">大郭郭呐 <em></em><em></em><em></em></div>
+            <div class="userimg"><img {{ request.user.head_image }} ><i></i></div>
+            <div class="user-level tc">{{ request.user.username }} <em></em><em></em><em></em></div>
             <div class="tc"><a href="javascript:;" class="button btn-control btn-follow"> + 关注</a><a href="javascript:;"
                                                                                                      class="button btn-control btn-sent"><em
                     class="myfont f18">&#xe63f;</em> 私信</a></div>
@@ -169,7 +167,6 @@
             </ul>
         </div>
     </div>
-
 </div>
 <script type="text/javascript">
     $(document).ready(function ($) {

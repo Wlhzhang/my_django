@@ -2,155 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>发布饭局</title>
+    <title>发布我的饭局</title>
     {% include 'common/public_css_js.html' %}
 </head>
 <body>
 <div class="head">
-  <div class="wrap clearfix">
-    <a href=" " class="logo indent">logo</a>
-    <div class="headr fr">
-      <form action="../active.html" method="post" class="headsearch">
-        <label class="label">
-          <input type="text" value="" name="" class="key">
-          <span class="text">搜索地址、名称、时间等</span>
-        </label>
-        <button type="submit" class="button btn-search">&#xe628;</button>
-      </form>
-      <a href="#"><em><img src="/static/images/sb.png"></em>  &nbsp;&nbsp;发布我的饭局</a>
-      <div class="user">
-        <span class="clearfix"><span class="userimg"><img src="/static/upload/img12.png"><i></i></span>
-        <a href="javascript:;" class="fr">设计--麻  <em>&#xe607;</em></a></span>
-        <ul class="topslide">
-          <li><em>&#xe627;</em><a href="../personal_center/mem.html">个人设置</a></li>
-          <li><em>&#xe63d;</em><a href="../personal_center/Message.html">消息中心<s>3</s></a></li>
-          <li><em>&#xe63c;</em><a href="Dinner.html">饭局管理</a></li>
-          <li><em>&#xe63e;</em><a href="../personal_center/fans.html">我的好友</a></li>
-          <li><em>&#xe611;</em><a href="../index.html">退出</a></li>
-        </ul>
-      </div>
+    <div class="wrap clearfix">
+        <a href=" " class="logo indent">logo</a>
+        <div class="headr fr">
+            <form action="../active.html" method="post" class="headsearch">
+                <label class="label">
+                    <input type="text" value="" name="" class="key">
+                    <span class="text">搜索地址、名称、时间等</span>
+                </label>
+                <button type="submit" class="button btn-search">&#xe628;</button>
+            </form>
+            <a href="/dinner/release/"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
+            <div class="user">
+        <span class="clearfix"><span class="userimg"><img {{ request.user.head_image }}><i></i></span>
+        <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
+                <ul class="topslide">
+                    <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
+                    <li><em>&#xe63d;</em><a href="/person/message/">消息中心<s>3</s></a></li>
+                    <li><em>&#xe63c;</em><a href="/dinner/join_dinner/">饭局管理</a></li>
+                    <li><em>&#xe63e;</em><a href="/person/fans/">我的好友</a></li>
+                    <li><em>&#xe611;</em><a href="/polls/logout/">退出</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-
 <div class="mem-banner" style="background-image:url(/static/upload/img11.jpg);"></div>
-
-
 <div class="memwrap wrap clearfix">
-  <div class="section fl">
-    <div class="location tr"><a href="Dinner.html">参加的饭局</a><a href="Host.html">主办的饭局</a><a href="Release.html" class="current">发布饭局</a></div>
-    <div class="Participate pd30">
-      <table class="baseinfo participate-tab">
-        <tr>
-          <th>活动标题：</th>
-          <td><input type="text" name="" value="" class="baseipt"></td>
-        </tr>
-        <tr>
-          <th>活动价格：</th>
-          <td><select data-placeholder="200" style="width:185px;" class="chosen-select-no-single" tabindex="9">
-              <option>200</option>
-              <option>200</option>
-            </select> 人/元</td>
-        </tr>
-        <tr>
-          <th>报名人数：</th>
-          <td><input type="text" name="" value="" class="baseipt" style="width:185px"> 人</td>
-        </tr>
-        <tr>
-          <th>活动时间：</th>
-            <td><input type="date"></td>
-{#          <td><input id="" class="Wdate" type="text" onfocus="WdatePicker({minDate:'%y-%M-{%d+1}',isShowClear:false,isShowToday:false,readOnly:true})"/>&nbsp;&nbsp;&nbsp;&nbsp;截至报名时间：<input id="" class="Wdate" type="text" onfocus="WdatePicker({minDate:'%y-%M-{%d+1}',isShowClear:false,isShowToday:false,readOnly:true})"/></td>#}
-        </tr>
-        <tr>
-          <th>活动玩法：</th>
-          <td>
-            <label><input type="radio" name="RadioGroup1" value="先到先得" id="RadioGroup1_0"> 先到先得 </label>
-            <label><input type="radio" name="RadioGroup1" value="双向选择" id="RadioGroup1_1">  双向选择 </label>
-            <label><input type="radio" name="RadioGroup1" value="大数据匹配" id="RadioGroup1_2">  大数据匹配 </label>
-          </td>
-        </tr>
-        <tr>
-          <th valign="top">活动标签：</th>
-          <td class="label-active">
-            <a href="javascript:;" class="label-name">标签</a><a href="javascript:;" class="label-name">标签</a><a href="javascript:;" class="label-name">标签</a><a href="javascript:;" class="label-name">标签</a><a href="javascript:;" class="label-name">标签</a>
-            <p class="mt10"><input type="text" name="" value="" class="baseipt"> 多个标签请用“空格”分开</p>
-          </td>
-        </tr>
-      </table>
-      活动照片：
-      <div class="photo clearfix">
-        <div class="photo-control fl">
-          <div class="active-photo img"><img id="ImgPr"></div>
-          <p class="mt10 clearfix"><a href="javascript:;" class="button dele fr">删除图片</a><label class="btn-upfiles"><input type="file" name="photo" id="up" />修改图片</label></p>
+    <form id="dinner_form" class="section fl" enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        <div class="location tr"><a href="">参加的饭局</a><a href="">主办的饭局</a><a href="/dinner/release/"
+                                                                            class="current">发布饭局</a></div>
+        <div class="Participate pd30">
+            <table class="baseinfo participate-tab">
+                <tr>
+                    <th>活动标题：</th>
+                    <td><input type="text" name="dinner_title" value="" class="baseipt"></td>
+                </tr>
+                <tr>
+                    <th>活动价格：</th>
+                    <td><input type="text" name="price" style="width:185px;" class="chosen-select-no-single">元</td>
+                </tr>
+                <tr>
+                    <th>报名人数：</th>
+                    <td><input type="text" name="number" value="" class="baseipt" style="width:185px"> 人</td>
+                </tr>
+                <tr>
+                    <th>活动时间：</th>
+                    <td><input name="dinner_date" type="date"></td>
+                </tr>
+                <tr>
+                    <th>截止时间：</th>
+                    <td><input name="deadline" type="date"></td>
+                </tr>
+                <tr>
+                    <th>活动玩法：</th>
+                    <td>
+                        <label><input type="radio" name="activities_play" value="先到先得" id="RadioGroup1_0"> 先到先得 </label>
+                        <label><input type="radio" name="activities_play" value="双向选择" id="RadioGroup1_1"> 双向选择 </label>
+                        <label><input type="radio" name="activities_play" value="大数据匹配" id="RadioGroup1_2"> 大数据匹配
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            活动照片：
+            <div class="photo clearfix">
+                <div class="photo-control fl">
+                    <div class="active-photo img "><img id="ImgPr2"></div>
+                    <p class="mt10 tc"><label class="btn-upfiles"><input type="file" name="activities_photo" id="up2"
+                                                                         value=""/>添加</label></p>
+                </div>
+                <div class="photo-info fl">
+                    <textarea name="intro" class="area"></textarea>
+                </div>
+            </div>
+            <span id="my_error"></span>
+            <div class="Release-submit">
+
+                <input name="" type="checkbox" value=""> 我已阅读并同意<a href="#" class="o">《17素材服务条款》</a>
+                <p class="mt20"><input type="button" id="dinner_button" value="提交" class="button btn-submit"></p>
+            </div>
         </div>
-        <div class="photo-info fl">
-          <textarea name="" cols="" rows="" class="area"></textarea>
+    </form>
+
+    <div class="aside fr">
+        <div class="pd15">
+            <div class="userimg"><img {{ request.user.head_image }} ><i></i></div>
+            <div class="user-level tc">{{ request.user.username }} <em></em><em></em><em></em></div>
+            <div class="tc"><a href="javascript:;" class="button btn-control btn-follow"> + 关注</a><a href="javascript:;"
+                                                                                                     class="button btn-control btn-sent"><em
+                    class="myfont f18">&#xe63f;</em> 私信</a></div>
+            <div class="Praise tc">老师，中国，陕西 <em>&#xe61d;</em><em>&#xe61d;</em><em>&#xe61d;</em></div>
+
+            <div class="txtwrap tc"><h1 class="f16">个人简介</h1>既能安静又能活泼，既能淑女又能犯二，<br>既能女汉子又能小清新～～～</div>
+            <h1 class="f16">关注 4</h1>
+            <ul class="followlist clearfix">
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+            </ul>
+            <h1 class="f16">粉丝 4</h1>
+            <ul class="followlist bd0 clearfix">
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+            </ul>
         </div>
-      </div>
-      <div class="photo clearfix">
-        <div class="photo-control fl">
-          <div class="active-photo img "><img id="ImgPr2"></div>
-          <p class="mt10 tc"><label class="btn-upfiles"><input type="file" name="photo" id="up2" />添加</label></p>
-          
-        </div>
-        <div class="photo-info fl">
-          <textarea name="" cols="" rows="" class="area"></textarea>
-        </div>
-      </div>
-      <p class="mt30">活动照片：</p>
-      <textarea name="" cols="" rows="" class="area2"></textarea>
-      <div class="Release-submit">
-        <input name="" type="checkbox" value="">  我已阅读并同意<a href="#" class="o">《17素材服务条款》</a>
-        <p class="mt20"><button type="button" name="" value="" class="button btn-submit">提交</button><button type="button" name="" value="" class="button btn-reset">取消</button></p>
-      </div>
     </div>
-    
-    
-  </div>
-  
-  <div class="aside fr">
-    <div class="pd15">
-      <div class="userimg"><img src="/static/upload/img12.png"><i></i></div>
-      <div class="user-level tc">大郭郭呐 <em></em><em></em><em></em></div>
-      <div class="tc"><a href="javascript:;" class="button btn-control btn-follow"> + 关注</a><a href="javascript:;" class="button btn-control btn-sent"><em class="myfont f18">&#xe63f;</em> 私信</a></div>
-      <div class="Praise tc">老师，中国，陕西 <em>&#xe61d;</em><em>&#xe61d;</em><em>&#xe61d;</em></div>
-      
-      <div class="txtwrap tc"><h1 class="f16">个人简介</h1>既能安静又能活泼，既能淑女又能犯二，<br>既能女汉子又能小清新～～～</div>
-      <h1 class="f16">关注 4</h1>
-      <ul class="followlist clearfix">
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-      </ul>
-      <h1 class="f16">粉丝 4</h1>
-      <ul class="followlist bd0 clearfix">
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-      </ul>
-    </div>
-  </div>
-  
+
 </div>
 
 <script type="text/javascript">
-$(document).ready(function($){
-	//select 样式美化
-	 var config = {
-		'.chosen-select-no-single' : {disable_search_threshold:10}
-	};
-	for (var selector in config) {
-		$(selector).chosen(config[selector]);
-	}
-	$("#up").uploadPreview({
-		Img: "ImgPr",
-	});
-	$("#up2").uploadPreview({
-		Img: "ImgPr2",
-	});
-});
+    $(document).ready(function ($) {
+        //select 样式美化
+        var config = {
+            '.chosen-select-no-single': {disable_search_threshold: 10}
+        };
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+        $("#up").uploadPreview({
+            Img: "ImgPr",
+        });
+        $("#up2").uploadPreview({
+            Img: "ImgPr2",
+        });
+    });
+    $('#dinner_button').click(function () {
+        $.ajax({
+            url: '/dinner/release/',
+            type: 'post',
+            data: new FormData($('#dinner_form')[0]),
+            cache: false,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                if (data.status == 'fail') {
+                    $('#my_error').text(data.msg)
+                } else if (data.status == 'success') {
+                    alert('发布成功');
+                    window.location.href = '/home/';
+                }
+            }
+        })
+    })
+
+
 </script>
 </body>
 </html>
