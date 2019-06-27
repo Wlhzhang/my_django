@@ -8,18 +8,11 @@
 <body>
 <div class="head">
     <div class="wrap clearfix">
-        <a href=" " class="logo indent">logo</a>
+        <a href="" class="logo indent">logo</a>
         <div class="headr fr">
-            <form action="../active.html" method="post" class="headsearch">
-                <label class="label">
-                    <input type="text" value="" name="" class="key">
-                    <span class="text">搜索地址、名称、时间等</span>
-                </label>
-                <button type="submit" class="button btn-search">&#xe628;</button>
-            </form>
             <a href="/dinner/release/"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
             <div class="user">
-        <span class="clearfix"><span class="userimg"><img {{ request.user.head_image }}><i></i></span>
+        <span class="clearfix"><span class="userimg"><img src="/media/{{ request.user.head_image }}"><i></i></span>
         <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
                 <ul class="topslide">
                     <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>

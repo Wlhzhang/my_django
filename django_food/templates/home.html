@@ -25,7 +25,7 @@
         <div class="headr fr">
             <a href="/dinner/release/"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
             <div class="user">
-        <span class="clearfix"><span class="userimg"><img {{ request.user.head_image }}><i></i></span>
+        <span class="clearfix"><span class="userimg"><img src="/media/{{ request.user.head_image }}"><i></i></span>
         <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
                 <ul class="topslide">
                     <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
@@ -38,7 +38,6 @@
         </div>
     </div>
 </div>
-
 <div class="mem-banner" style="background-image:url(/static/upload/img11.jpg);"></div>
 
 <div class="memwrap wrap clearfix">

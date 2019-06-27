@@ -25,7 +25,7 @@
         <div class="headr fr">
             <a href="/dinner/release/"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
             <div class="user">
-    <span class="clearfix"><span class="userimg"><img {{ request.user.head_image }}><i></i></span>
+        <span class="clearfix"><span class="userimg"><img src="/media/{{ request.user.head_image }}"><i></i></span>
         <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
                 <ul class="topslide">
                     <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
@@ -38,8 +38,6 @@
         </div>
     </div>
 </div>
-
-
 <div class="activewrap wrap clearfix">
     <div class="section fl">
         <form class="Condition clearfix" id="search_form" enctype="multipart/form-data" method="post">
@@ -178,7 +176,7 @@
                             '<a href="personal_center/detail.html"><img src="/media/' + data.activities_photo + '"></a>\n' +
                             '<div class="bottominfo">\n' +
                             '<span class="label"><a href="javascript:;">' + data.activities_play + '</a>\n' +
-                            '<a href="/dinner/sing_up" class="Sign_up">我要报名</a>\n' +
+                            '<a href="/dinner/sing_up/" class="Sign_up">我要报名</a>\n' +
                             '</div>\n' +
                             '</div>\n' +
                             '<div class="active-info">\n' +

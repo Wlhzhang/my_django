@@ -8,22 +8,15 @@
 <body>
 <div class="head">
     <div class="wrap clearfix">
-        <p class="logo indent">logo</p>
+        <a href="" class="logo indent">logo</a>
         <div class="headr fr">
-            <form action="../active.html" method="post" class="headsearch">
-                <label class="label">
-                    <input type="text" value="" name="" class="key">
-                    <span class="text">搜索地址、名称、时间等</span>
-                </label>
-                <button type="submit" value="搜索" class="button btn-search">&#xe628;</button>
-            </form>
-            <a href="#"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
+            <a href="/dinner/release/"><em><img src=""></em> &nbsp;&nbsp;发布我的饭局</a>
             <div class="user">
-       <span class="clearfix"><span class="userimg"><img {{ request.user.head_image }}><i></i></span>
+        <span class="clearfix"><span class="userimg"><img src="/media/{{ request.user.head_image }}"><i></i></span>
         <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
                 <ul class="topslide">
                     <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
-                    <li><em>&#xe63d;</em><a href="/person/message/">消息中心<s>3</s></a></li>
+                    <li><em>&#xe63d;</em><a href="/person/message/">消息中心</a></li>
                     <li><em>&#xe63c;</em><a href="/dinner/join_dinner/">饭局管理</a></li>
                     <li><em>&#xe63e;</em><a href="/person/fans/">我的好友</a></li>
                     <li><em>&#xe611;</em><a href="/polls/logout/">退出</a></li>
@@ -36,13 +29,13 @@
 <div class="wrap">
     <div class="sign-title tc">
         <h1>我要申请报名</h1>
-        亲爱的<a href="#" class="o">wang</a>，欢迎申请<span class="o">热红酒</span>
+        亲爱的<a href="#" class="o">{{ request.user.username }}</a>，欢迎申请<span class="o">热红酒</span>
     </div>
 
     <div class="membox clearfix">
         <div class="userinfo fl">
-            <a href="#" class="img"><img src="/static/upload/img12.png"></a>
-            大郭郭呐
+            <a href="#" class="img"><img src="/media/{{ request.user.head_image }}"></a>
+            {{  request.user.username }}
         </div>
         <div class="txt fr">
             <h1>你永远不会知道，这一秒的选择，将会在未来有怎样的惊奇收获。</h1>
@@ -50,35 +43,32 @@
         </div>
     </div>
 
-    <div class="Application mt30">
+    <form class="Application mt30" id="sing_form" enctype="multipart/form-data" method="post">
         <table class="apptab">
             <tr>
                 <th><em class="ico"></em>申请理由：</th>
                 <td>
                     <p class="boxw clearfix"><span class="fr">还可以输入<span class="o" id="textCount">90</span>字</span>(为了提高申请成功率，请如实填写）
                     </p>
-                    <textarea name="" cols="" rows="" id="TextArea1" class="boxw TextArea"
-                              onkeyup="words_deal();"></textarea>
+                    <textarea name="apply_reason"  id="TextArea1" class="boxw TextArea" onkeyup="words_deal();"></textarea>
                 </td>
             </tr>
             <tr>
                 <th>备注：</th>
                 <td>
                     <p class="clearfix">(是否有忌口和过敏问题）</p>
-                    <textarea name="" cols="" rows="" class="boxw TextArea"></textarea>
+                    <textarea name="remark" cols="" rows="" class="boxw TextArea"></textarea>
                     <div class="Release-submit tl">
                         <input name="" type="checkbox" value=""> 我已阅读并同意<a href="#" class="o">《17素材服务条款》</a>
                         <p class="mt20">
-                            <button type="button" name="" value="" class="button btn-submit Appbtn"
-                                    onClick="location.href='/dinner/sing_success'">提交
-                            </button>
-                            <button type="button" name="" value="" class="button btn-reset Appbtn">取消</button>
+                            <input type="button" name="sing_button" value="提交" class="button btn-submit Appbtn"
+                            <a href="/dinner/home/" class="button btn-reset Appbtn">取消</a>
                         </p>
                     </div>
                 </td>
             </tr>
         </table>
-    </div>
+    </form>
 
 </div>
 

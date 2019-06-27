@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人设置</title>
+    {% include 'common/public_css_js.html' %}
+</head>
+<body>
+<div class="head">
+    <div class="wrap clearfix">
+        <a href="" class="logo indent">logo</a>
+        <div class="headr fr">
+            <a href="/dinner/release/"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
+            <div class="user">
+        <span class="clearfix"><span class="userimg"><img src="/media/{{ request.user.head_image }}"><i></i></span>
+        <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
+                <ul class="topslide">
+                    <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
+                    <li><em>&#xe63d;</em><a href="/person/message/">消息中心<s>3</s></a></li>
+                    <li><em>&#xe63c;</em><a href="/dinner/join_dinner/">饭局管理</a></li>
+                    <li><em>&#xe63e;</em><a href="/person/fans/">我的好友</a></li>
+                    <li><em>&#xe611;</em><a href="/polls/logout/">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mem-banner" style="background-image:url(/static/upload/img11.jpg);"></div>
+
+<div class="memwrap wrap clearfix">
+    <div class="section fl">
+        <div class="location tr"><a href="/person/get_men/" class="current">基本资料</a><a href="pwd.html">修改密码</a></div>
+
+        <form class="pd20" id="modify_form" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table class="baseinfo">
+                <tr>
+                    <th>账号：</th>
+                    <td>{{ request.user.email }}</td>
+                </tr>
+                <tr>
+                    <th>昵称：</th>
+                    <td>{{ request.user.username }}</td>
+                </tr>
+                <tr>
+                    <th valign="top">头像：</th>
+                    <td>
+                        <div class="user-photo img fl"><img src="/media/{{ request.user.head_image }}"></div>
+                        <div class="upfilebox mt20">
+                            <input name="head_image" type="file" class="button btn-upfile" value="选择照片">
+                            <p class="mt10">支持jpg,gif,png格式，建议尺寸大于100*100。</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>性别：</th>
+                    <td>
+                        <label><input type="radio" name="sex" value="男"> 男</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="radio" name="sex" value="女"> 女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>职业：</th>
+                    <td><input name="career" type="text" class="baseipt"></td>
+                </tr>
+                <tr>
+                    <th>所在城市：</th>
+                    <td><input name="address" type="text"></td>
+{#                    <td><select style="width:154px;" class="chosen-select-no-single" tabindex="9">#}
+{##}
+{#                    </select><select style="width:154px;" class="chosen-select-no-single" tabindex="9">#}
+{##}
+{#                    </select><select style="width:154px;" class="chosen-select-no-single" tabindex="9">#}
+{##}
+{#                    </select></td>#}
+                </tr>
+                <tr>
+                    <th valign="top">个人简介：</th>
+
+                    <td>
+                        <textarea name="intro" cols="" rows="" class="baseinfo-textarea"></textarea>
+                        <span id="my_error"></span>
+                        <p class="mt30 tc"><input type="button" id="modify_button" value="保存" class="button btn-save">
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+    <div class="aside fr">
+        <div class="pd15">
+            <div class="userimg"><img src="/static/upload/img12.png"><i></i></div>
+            <div class="user-level tc">大郭郭呐 <em></em><em></em><em></em></div>
+            <div class="tc"><a href="javascript:;" class="button btn-control btn-follow"> + 关注</a><a href="javascript:;"
+                                                                                                     class="button btn-control btn-sent"><em
+                    class="myfont f18">&#xe63f;</em> 私信</a></div>
+            <div class="Praise tc">老师，中国，陕西 <em>&#xe61d;</em><em>&#xe61d;</em><em>&#xe61d;</em></div>
+
+            <div class="txtwrap tc"><h1 class="f16">个人简介</h1>既能安静又能活泼，既能淑女又能犯二，<br>既能女汉子又能小清新～～～</div>
+            <h1 class="f16">关注 4</h1>
+            <ul class="followlist clearfix">
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+            </ul>
+            <h1 class="f16">粉丝 4</h1>
+            <ul class="followlist bd0 clearfix">
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    {#$(function () {#}
+    {#    $.ajax({#}
+    {#        url: '/person/get_men/',#}
+    {#        data: {parent_id: '0', city_type: '1'},#}
+    {#        success: function (response_data) {#}
+    {#            $.each(response_data.result, function (index, item) {#}
+    {#                $('#sel_province').append('<option value="' + item.id + '">' + item.name + '</option>')#}
+    {#            });#}
+    {#        }#}
+    {#    });#}
+
+    $('#modify_button').click(function () {
+         $.ajax({
+             url:'/person/get_men/',
+             type:'post',
+             data: new FormData($('#modify_form')[0]),
+             cache:false,
+             processData:false,
+             contentType:false,
+             success:function (data) {
+                 if(data.status == 'success'){
+                     alert('信息修改成功');
+                     window.location.href('/person/get_men/')
+                 }else if(data.status == 'fail'){
+                     $('#my_error').text(data.msg)
+                 }
+             }
+         })
+    })
+
+</script>
+</body>
+</html>
