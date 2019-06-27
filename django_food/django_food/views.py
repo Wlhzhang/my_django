@@ -6,3 +6,6 @@ def index(request):
 
 def home(request):
     return render(request,'home.html')
+
+def active(request):
+    return render(request,'active.html')

@@ -36,8 +36,7 @@
 <div class="memwrap wrap clearfix">
     <form id="dinner_form" class="section fl" enctype="multipart/form-data" method="post">
         {% csrf_token %}
-        <div class="location tr"><a href="">参加的饭局</a><a href="">主办的饭局</a><a href="/dinner/release/"
-                                                                            class="current">发布饭局</a></div>
+        <div class="location tr"><a href="">参加的饭局</a><a href="">主办的饭局</a><a href="/dinner/release/" class="current">发布饭局</a></div>
         <div class="Participate pd30">
             <table class="baseinfo participate-tab">
                 <tr>
@@ -65,8 +64,7 @@
                     <td>
                         <label><input type="radio" name="activities_play" value="先到先得" id="RadioGroup1_0"> 先到先得 </label>
                         <label><input type="radio" name="activities_play" value="双向选择" id="RadioGroup1_1"> 双向选择 </label>
-                        <label><input type="radio" name="activities_play" value="大数据匹配" id="RadioGroup1_2"> 大数据匹配
-                        </label>
+                        <label><input type="radio" name="activities_play" value="大数据匹配" id="RadioGroup1_2"> 大数据匹配</label>
                     </td>
                 </tr>
             </table>
@@ -120,13 +118,6 @@
 
 <script type="text/javascript">
     $(document).ready(function ($) {
-        //select 样式美化
-        var config = {
-            '.chosen-select-no-single': {disable_search_threshold: 10}
-        };
-        for (var selector in config) {
-            $(selector).chosen(config[selector]);
-        }
         $("#up").uploadPreview({
             Img: "ImgPr",
         });
@@ -152,8 +143,6 @@
             }
         })
     })
-
-
 </script>
 </body>
 </html>

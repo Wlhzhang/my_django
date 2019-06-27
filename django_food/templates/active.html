@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="mezz">
-    <meta name="author" content="mezz">
-    <link href="/static/css/css.css" rel="stylesheet">
-    <link href="/static/css/chosen.css" rel="stylesheet">
-{#    <!--[if lt IE 9]>#}
-{#    <link href="/static/css/ie.css" rel="stylesheet" type="text/css" >#}
-{#    <meta http-equiv="X-UA-Compatible" content="IE=8" >#}
-{#<![endif]-->#}
-{#    <!--[if lte IE 6]><meta http-equiv="refresh" content="0;url=IE6/IE6.html"><![endif]-->#}
-{#    <link href="/static/favicon.ico" rel="SHORTCUT ICON">#}
-    <title>17素材·私厨 - 为你推荐遍布全球最新鲜，最与众不同的顶级生活方式</title>
+    <meta charset="UTF-8">
+    <title>饭局首页</title>
+    {% include 'common/public_css_js.html' %}
+    <style>
+        .m-box > a, .m-box > span {
+            padding: 0 10px;
+            border: 1px solid;
+            margin: 5px;
+            text-decoration: none;
+            color: #bdbdbd;
+        }
+
+        .m-box > a:hover, .m-box > span:hover {
+            background-color: #4d99bf;
+        }
+    </style>
 </head>
 <body>
 <div class="head">
     <div class="wrap clearfix">
-        <a href="index.html" class="logo indent">logo</a>
+        <a href="" class="logo indent">logo</a>
         <div class="headr fr">
-            <form action="active.html" method="post" class="headsearch">
-                <label class="label">
-                    <input type="text" value="" name="" class="key">
-                    <span class="text">搜索地址、名称、时间等</span>
-                </label>
-                <button type="submit" class="button btn-search">&#xe628;</button>
-            </form>
-            <a href="#"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
+            <a href="/dinner/release/"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
             <div class="user">
-        <span class="clearfix"><span class="userimg"><img src="/static/upload/img12.png"><i></i></span>
-        <a href="javascript:;" class="fr">设计--麻  <em>&#xe607;</em></a></span>
+    <span class="clearfix"><span class="userimg"><img {{ request.user.head_image }}><i></i></span>
+        <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
                 <ul class="topslide">
-                    <li><em>&#xe627;</em><a href="personal_center/mem.html">个人设置</a></li>
-                    <li><em>&#xe63d;</em><a href="personal_center/Message.html">消息中心<s>3</s></a></li>
-                    <li><em>&#xe63c;</em><a href="dining_center/Dinner.html">饭局管理</a></li>
-                    <li><em>&#xe63e;</em><a href="personal_center/fans.html">我的好友</a></li>
-                    <li><em>&#xe611;</em><a href="index.html">退出</a></li>
+                    <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
+                    <li><em>&#xe63d;</em><a href="/person/message/">消息中心<s>3</s></a></li>
+                    <li><em>&#xe63c;</em><a href="/dinner/join_dinner/">饭局管理</a></li>
+                    <li><em>&#xe63e;</em><a href="/person/fans/">我的好友</a></li>
+                    <li><em>&#xe611;</em><a href="/polls/logout/">退出</a></li>
                 </ul>
             </div>
         </div>
@@ -46,146 +42,43 @@
 
 <div class="activewrap wrap clearfix">
     <div class="section fl">
-        <div class="Condition clearfix">
-            <div class="item classfy">
-                <h1>类别</h1>
-                <a href="#">中餐</a><a href="#" class="current">西餐</a><a href="#">意餐</a>
-            </div>
-            {#      <div class="item time">#}
-            {#        <h1>时间</h1>#}
-            {#        <input id="" class="Wdate" type="text" onfocus="WdatePicker({minDate:'%y-%M-{%d+1}',isShowClear:false,isShowToday:false,readOnly:true})"/> - <input id="" class="Wdate" type="text" onfocus="WdatePicker({minDate:'%y-%M-{%d+1}',isShowClear:false,isShowToday:false,readOnly:true})"/>#}
-            {#      </div>#}
+        <form class="Condition clearfix" id="search_form" enctype="multipart/form-data" method="post">
             <div>
-                <h1>地点</h1>
-                <a href="#">北京市</a><a href="#">上海市</a><a href="#">天津市</a><a href="#" class="current">重庆市</a><a href="#">吉林省</a><a href="#">河北省 </a>
+                类别:&nbsp;<a href="#">&nbsp;中餐&nbsp;</a><a href="#" class="current">&nbsp;西餐&nbsp;</a><a href="#">&nbsp;意餐</a>
             </div>
-            <div class="item Number">
-                <h1>就餐人数</h1>
-                <a href="#"> 1人</a><a href="#" class="current">2人</a><a href="#">3人</a><a href="#">4人</a><a
-                    href="#">5人</a><a href="#">6人</a>
+            <div>
+                活动方式:&nbsp;<a href="#">&nbsp;先到先得&nbsp;</a><a href="#" class="current">&nbsp;双向选择&nbsp;</a><a href="#">&nbsp;大数据匹配&nbsp;</a>
             </div>
-
-        </div>
-
-        <div class="sortbar mt10 clearfix">
-            <ul class="nav-pills">
-                <li class="current"><a href="active.html?id=1" title="全部">全部</a></li>
-                <li><a href="active.html?id=2" title="时间">时间<em class="ico time"></em></a></li>
-                <li><a href="active.html?id=3" title="菜金从高到低">菜金<em class="ico price"></em></a></li>
-            </ul>
-            <div class="pagination-sort fr">
-                <span class="page-info"><strong>1</strong>/33</span>
-                <a href="javascript:;" class="myfont page-prev">&#xe606;</a>
-                <a href="javascript:;" class="myfont page-next">&#xe609;</a>
+            <div>
+                <label>价格:</label>
+                <input type="number" name="price__gte">
+                <label>--</label>
+                <input type="number" name="price__lte">
             </div>
+            <div>
+                <label>就餐人数:</label>
+                <input type="number" name="number__gte">
+                <label>--</label>
+                <input type="number" name="number__lte">
+            </div>
+            <div>
+                <input type="button" id="btn_search" value="搜索">
+            </div>
+        </form>
 
-        </div>
+        <ul class="active-list" id="dinner_list">
 
-        <ul class="active-list">
-            <li>
-                <div class="img">
-                    <a href="personal_center/detail.html"><img src="/static/upload/img20.jpg"></a>
-                    <div class="bottominfo">
-                        <span class="label"><a href="javascript:;">活动玩法</a><a href="javascript:;">活动标签</a><a
-                                href="javascript:;">活动标签</a></span><a href="dining_center/Sign_up.html" class="Sign_up">我要报名</a>
-                    </div>
-                </div>
-                <div class="active-info">
-                    <div class="user">
-                        <a href="#" class="userimg"><img src="/static/upload/img21.png"></a>
-                        <a href="#">会员名称</a><em class="user-level"></em><em class="user-level"></em><em
-                            class="user-level"></em>
-                    </div>
-                    <div class="txt">伦敦最具“摇滚精神”的独立花店——Rebel
-                        Rebel受『中赫时尚』设计工作室之邀来到北京，展示温柔花艺叛逆的另一面：不循规蹈矩，永远创新——用最柔美的花朵说着最执着的语言。
-                    </div>
-                    <span class="o">88元/每人(6位) </span> 2015年1月1日
-                </div>
-            </li>
-            <li>
-                <div class="img">
-                    <a href="personal_center/detail.html"><img src="/static/upload/img20.jpg"></a>
-                    <div class="bottominfo">
-                        <span class="label"><a href="javascript:;">活动玩法</a><a href="javascript:;">活动标签</a><a
-                                href="javascript:;">活动标签</a></span><a href="dining_center/Sign_up.html" class="Sign_up">我要报名</a>
-                    </div>
-                </div>
-                <div class="active-info">
-                    <div class="user">
-                        <a href="#" class="userimg"><img src="/static/upload/img21.png"></a>
-                        <a href="#">会员名称</a><em class="user-level"></em><em class="user-level"></em><em
-                            class="user-level"></em>
-                    </div>
-                    <div class="txt">伦敦最具“摇滚精神”的独立花店——Rebel
-                        Rebel受『中赫时尚』设计工作室之邀来到北京，展示温柔花艺叛逆的另一面：不循规蹈矩，永远创新——用最柔美的花朵说着最执着的语言。
-                    </div>
-                    <span class="o">88元/每人(6位) </span> 2015年1月1日
-                </div>
-            </li>
-            <li>
-                <div class="img">
-                    <a href="personal_center/detail.html"><img src="/static/upload/img20.jpg"></a>
-                    <div class="bottominfo">
-                        <span class="label"><a href="javascript:;">活动玩法</a><a href="javascript:;">活动标签</a><a
-                                href="javascript:;">活动标签</a></span><a href="dining_center/Sign_up.html" class="Sign_up">我要报名</a>
-                    </div>
-                </div>
-                <div class="active-info">
-                    <div class="user">
-                        <a href="#" class="userimg"><img src="/static/upload/img21.png"></a>
-                        <a href="#">会员名称</a><em class="user-level"></em><em class="user-level"></em><em
-                            class="user-level"></em>
-                    </div>
-                    <div class="txt">伦敦最具“摇滚精神”的独立花店——Rebel
-                        Rebel受『中赫时尚』设计工作室之邀来到北京，展示温柔花艺叛逆的另一面：不循规蹈矩，永远创新——用最柔美的花朵说着最执着的语言。
-                    </div>
-                    <span class="o">88元/每人(6位) </span> 2015年1月1日
-                </div>
-            </li>
-            <li>
-                <div class="img">
-                    <img src="/static/upload/img20.jpg">
-                    <div class="bottominfo">
-                        <span class="label"><a href="javascript:;">活动玩法</a><a href="javascript:;">活动标签</a><a
-                                href="javascript:;">活动标签</a></span><a href="dining_center/Sign_up.html" class="Sign_up">我要报名</a>
-                    </div>
-                </div>
-                <div class="active-info">
-                    <div class="user">
-                        <a href="#" class="userimg"><img src="/static/upload/img21.png"></a>
-                        <a href="#">会员名称</a><em class="user-level"></em><em class="user-level"></em><em
-                            class="user-level"></em>
-                    </div>
-                    <div class="txt">伦敦最具“摇滚精神”的独立花店——Rebel
-                        Rebel受『中赫时尚』设计工作室之邀来到北京，展示温柔花艺叛逆的另一面：不循规蹈矩，永远创新——用最柔美的花朵说着最执着的语言。
-                    </div>
-                    <span class="o">88元/每人(6位) </span> 2015年1月1日
-                </div>
-            </li>
         </ul>
-
-        <div class="page2">
-            <div class="inner">
-        <span>
-          <span>
-            <a class="previous disabled" href="#" onclick="return false;"></a>
-            <a href="#" class="next"></a>
-            <a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a> ... <a href="#">29</a>
-          </span>
-        </span>
-            </div>
-        </div>
-
+        <div class="m-box" style="text-align: center"></div>
     </div>
-
     <div class="aside fr">
         <h1 class="header">热门活动</h1>
         <div class="hot-active">
             <a href="#" class="img"><img src="/static/upload/img19.jpg"></a>
             <div class="active-info">
                 <div class="user">
-                    <a href="#" class="userimg"><img src="/static/upload/img12.png"></a>
-                    <a href="#">会员名称</a>
+                    <a href="#" class="userimg"><img {{ request.user.head_image }}></a>
+                    <a href="#">{{ request.user.username }}</a>
                 </div>
                 <div class="hd"><a href="#">标题用最柔美的花朵说着最执着的语</a></div>
                 <span class="o">88元/每人(6位) </span> 2015年1月1日
@@ -200,10 +93,8 @@
             <li><span class="time">[11-10]</span><a href="#">海纳创作料理价值350元高级...</a></li>
         </ul>
     </div>
-
 </div>
 
-<!--foot-->
 <div class="footmenu">
     <div class="wrap clearfix">
         <div class="item bd0">
@@ -254,11 +145,7 @@
     <div class="gotop">&#xe608;</div>
 </div>
 <div class="foot tc">Copyright © 2003-2015 17素材, All Rights Reserved</div>
-<script src="/static/js/jquery.js"></script>
-<script src="/static/date/WdatePicker.js"></script>
-<script src="/static/js/Action.js"></script>
-
-<script src="/static/js/chosen.jquery.js"></script>
+<script src="/static/js/jquery.pagination.js"></script>
 <script type="text/javascript">
     $(document).ready(function ($) {
         //select 样式美化
@@ -269,6 +156,86 @@
             $(selector).chosen(config[selector]);
         }
     });
+    $(function () {
+        getDinner(1, true);
+        count = 0;
+
+        function getDinner(page, init) {
+            $.ajax({
+                url: '/dinner/dis_dinner/',
+                data: {'page': page, 'total': 2},
+                type: 'get',
+                dataType: 'json',
+                success: function (response) {
+                    $('#dinner_list').html('');
+                    console.info(response.result.data)
+                    $.each(response.result.data, function (index, item) {
+                        count = response.result.count;
+                        var data = item;
+                        $('#dinner_list').append(
+                            '<li>\n' +
+                            '<div class="img">\n' +
+                            '<a href="personal_center/detail.html"><img src="/media/' + data.activities_photo + '"></a>\n' +
+                            '<div class="bottominfo">\n' +
+                            '<span class="label"><a href="javascript:;">' + data.activities_play + '</a>\n' +
+                            '<a href="/dinner/sing_up" class="Sign_up">我要报名</a>\n' +
+                            '</div>\n' +
+                            '</div>\n' +
+                            '<div class="active-info">\n' +
+                            '<div class="user">\n' +
+                            ' <a href="#" class="userimg"><img src="/media/' + data.head + '"></a>\n' +
+                            ' <a href="#">' + data.username + '</a><em class="user-level"></em>\n' +
+                            '<em class="user-level"></em>\n' +
+                            ' <em class="user-level"></em>\n' +
+                            '</div>\n' +
+                            '<div class="txt">' + data.intro + '</div>\n' +
+                            '<span class="o">' + data.price + '元/每人(6位)</span>\n' +
+                            '</div>\n' +
+                            '</li>\n'
+                        )
+                    });
+                    if (init == true) {
+                        initPage();
+                    }
+                }
+            })
+        }
+
+        function initPage() {
+            $('.m-box').pagination({
+                pageCount: count,
+                showData: 5,
+                coping: true,
+                homePage: '首页',
+                endPage: '末页',
+                prevContent: '上页',
+                nextContent: '下页',
+                callback: function (api) {
+                    getDinner(api.getCurrent(), false)
+                }
+            });
+        }
+    });
+    $(function () {
+        $('#btn_search').click(function () {
+            $.ajax({
+                url:'/dinner/dinner_list/',
+                type:'get',
+                dataType:'json',
+                //data:new FormData($('#search_form')[0]), post请求
+                data:$('#search_form').serialize(),
+                contentType:false,
+                processData:false,
+                success:function (response_data) {
+                    console.info(response_data)
+                    {#$('#product_list').html('');#}
+                    {#$.each(response_data.data,function (index,item) {#}
+                    {#    $('#product_list').append('<tr><td>'+item.name+'</td><td>'+item.price+'</td></tr>')#}
+
+                }
+            })
+        })
+    })
 </script>
 </body>
 </html>

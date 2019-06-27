@@ -15,15 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path, include
+from django.views.static import serve
 
-from django_food.views import index, home
+from django_food.settings import MEDIA_ROOT
+from django_food.views import index, home, active
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path('^$',index,name='index'),
     path('home/', home, name='home'),
+    path('active/', active, name='active'),
     path('polls/', include(('polls.urls', 'polls'), namespace='polls')),
     path('person/', include(('person.urls', 'person'), namespace='person')),
     path('dinner/', include(('dinner.urls', 'person'), namespace='dinner')),
-
+    re_path(r'^media/(?P<path>.*)$', serve, {'document_root':MEDIA_ROOT}),
 ]

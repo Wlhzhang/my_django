@@ -10,14 +10,7 @@
   <div class="wrap clearfix">
     <a href=" " class="logo indent">logo</a>
     <div class="headr fr">
-      <form action=" " method="post" class="headsearch">
-        <label class="label">
-          <input type="text" value="" name="" class="key">
-          <span class="text">搜索地址、名称、时间等</span>
-        </label>
-        <button type="submit" class="button btn-search">&#xe628;</button>
-      </form>
-      <a href="#"><em><img src="/static/images/sb.png"></em>  &nbsp;&nbsp;发布我的饭局</a>
+      <a href="/dinner/release/"><em><img src="/static/images/sb.png"></em>  &nbsp;&nbsp;发布我的饭局</a>
       <div class="user">
    <span class="clearfix"><span class="userimg"><img {{ request.user.head_image }}><i></i></span>
         <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
@@ -38,7 +31,7 @@
 
 <div class="memwrap wrap clearfix">
   <div class="section fl">
-    <div class="location tr"><a href="Dinner.html" class="current">参加的饭局</a><a href="Host.html">主办的饭局</a><a href="Release.html">发布饭局</a></div>
+    <div class="location tr"><a href="Dinner.html" class="current">参加的饭局</a><a href="Host.html">主办的饭局</a><a href="/dinner/release/">发布饭局</a></div>
     <div class="Participate pd30">
       <div class="item">
         <a href="#" class="user img"><img src="/static/upload/img12.png"></a>
@@ -152,7 +145,7 @@ $(document).ready(function($){
 	//select 样式美化
 	 var config = {
 		'.chosen-select-no-single' : {disable_search_threshold:10}
-	}
+	};
 	for (var selector in config) {
 		$(selector).chosen(config[selector]);
 	}

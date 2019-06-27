@@ -39,21 +39,16 @@
 
 <div class="memwrap wrap clearfix">
   <div class="section fl">
-    <div class="location tr"><a href="Dinner.html">参加的饭局</a><a href="Host.html" class="current">主办的饭局</a><a href="Release.html">发布饭局</a></div>
+      <div class="location tr"><a href="/active/" class="current">所有饭局</a><a href="/home/" class="current">我的首页</a><a href="Dinner.html">参加的饭局</a><a href="/dinner/host/" class="current">主办的饭局</a><a href="/dinner/release/">发布饭局</a></div>
     <div class="Participate pd30">
       <div class="item bd0">
-        <a href="#" class="user img"><img src="/static/upload/img12.png"></a>
-        <div class="hd"><span class="username">大郭郭呐</span>  发布了  <span class="Period">NO.02期活动</span></div>
-        <div class="bd">
-          <div class="Activity-img img"><img src="/static/upload/img14.jpg"></div>
-          <div class="txt">
-            <div class="title">价值350元高级自助餐免费抢！</div>
-            <div class="info">最近，因为各种事，总是会觉得有些委屈，有些难过，也会掉泪，甚至觉得自己不能够好好的活着，偶然看到写着“活着”这两个字，我想知道，郝云的专辑里是否蕴藏...	</div>
-            <p class="mt10"><a href="#" target="_blank">先到先得</a>    <a href="#" target="_blank">双向选择</a>    <a href="#" target="_blank">大数据匹配</a></p>
-          </div>
+        <a href="#" class="user img"><img {{ request.user.head_image }}></a>
+        <div class="hd"><span class="username">{{ request.user.username }} </span></div>
+        <div class="bd" id="my_dinner">
+
         </div>
       </div>  
-      <p class="mt40 tc"><img src="/static//static/images/registration.jpg"></p>
+      <p class="mt40 tc"><img src="/static/images/registration.jpg"></p>
     </div>
     <div class="registration clearfix">
       <div class="item">
@@ -102,12 +97,12 @@
   
   <div class="aside fr">
     <div class="pd15">
-      <div class="userimg"><img src="/static/upload/img12.png"><i></i></div>
-      <div class="user-level tc">大郭郭呐 <em></em><em></em><em></em></div>
+      <div class="userimg"><img {{ request.user.head_image }} ><i></i></div>
+      <div class="user-level tc">{{ request.user.username }} <em></em><em></em><em></em></div>
       <div class="tc"><a href="javascript:;" class="button btn-control btn-follow"> + 关注</a><a href="javascript:;" class="button btn-control btn-sent"><em class="myfont f18">&#xe63f;</em> 私信</a></div>
       <div class="Praise tc">老师，中国，陕西 <em>&#xe61d;</em><em>&#xe61d;</em><em>&#xe61d;</em></div>
       
-      <div class="txtwrap tc"><h1 class="f16">个人简介</h1>既能安静又能活泼，既能淑女又能犯二，<br>既能女汉子又能小清新～～～</div>
+      <div class="txtwrap tc"><h1 class="f16">个人简介</h1>{{ request.user.intro }}</div>
       <h1 class="f16">关注 4</h1>
       <ul class="followlist clearfix">
         <li><a href="#"><img src="/static/upload/img12.png"></a></li>
@@ -137,6 +132,31 @@ $(document).ready(function($){
 		$(selector).chosen(config[selector]);
 	}
 });
+$.ajax({
+    url:'/dinner/my_dinner/',
+    type:'get',
+    dataType:'json',
+    processData:false,
+    contentType:false,
+    success:function (response) {
+        $('#my_dinner').html('');
+        $.each(response.my_dinner, function(index, item) {
+            var my_dinner = item;
+            $('#my_dinner').append(
+                '<div class="Activity-img img">\n' +
+                '<img src="/media/'+ my_dinner.activities_photo+'">\n' +
+                '</div>\n' +
+                '<div class="txt">\n' +
+                '<div class="title">' + my_dinner.dinner_title + '</div>\n' +
+                '<div class="info">' + my_dinner.intro + '</div>\n' +
+                ' <p class="mt10"><a href="#" target="_blank">' + my_dinner.activities_play + '</a>\n' +
+                ' </p>\n' +
+                '</div>\n'
+            )
+        })
+    }
+
+})
 </script>
 </body>
 </html>

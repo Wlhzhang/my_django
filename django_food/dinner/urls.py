@@ -1,15 +1,19 @@
 from django.urls import path,re_path
 
-from dinner.views import join_dinner, management, Release, sing_up, sing_success, dis_dinner
+from dinner.views import join_dinner, management, Release, sing_up, sing_success, dinner_list, DinnerView, \
+    MyEncoder, DinnerQuery, dis_dinner, my_dinner
 
 urlpatterns=[
-
     re_path(r'^join_dinner/$',join_dinner,name='join_dinner'),
     re_path(r'^management/$', management, name='management'),
     re_path(r'^release/$', Release.as_view(), name='release'),
     re_path(r'^sing_up/$', sing_up, name='sing_up'),
     re_path(r'^sing_success/$', sing_success, name='sing_success'),
+    re_path(r'^dinner_list/$', dinner_list, name='dinner_list'),
+    re_path(r'^dinner_view/$', DinnerView, name='DinnerView'),
+    re_path(r'^my_encoder/$', MyEncoder, name='MyEncoder'),
+    re_path(r'^dinner_query/$', DinnerQuery, name='dis_dinner'),
     re_path(r'^dis_dinner/$', dis_dinner, name='dis_dinner'),
-
+    re_path(r'^my_dinner/$', my_dinner, name='dmy_dinner')
 
 ]
