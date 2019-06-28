@@ -40,12 +40,9 @@
 </div>
 <div class="activewrap wrap clearfix">
     <div class="section fl">
-        <form class="Condition clearfix" id="search_form" enctype="multipart/form-data" method="post">
+        <form action="/dinner/dinner_list/" class="Condition clearfix" id="search_form" enctype="multipart/form-data" method="post">
             <div>
-                类别:&nbsp;<a href="#">&nbsp;中餐&nbsp;</a><a href="#" class="current">&nbsp;西餐&nbsp;</a><a href="#">&nbsp;意餐</a>
-            </div>
-            <div>
-                活动方式:&nbsp;<a href="#">&nbsp;先到先得&nbsp;</a><a href="#" class="current">&nbsp;双向选择&nbsp;</a><a href="#">&nbsp;大数据匹配&nbsp;</a>
+                <p class="current">活动方式:&nbsp;<input  name="activities_play">&nbsp;&nbsp; 先到先得&nbsp;双向选择&nbsp; 大数据匹配</p>
             </div>
             <div>
                 <label>价格:</label>
@@ -153,20 +150,21 @@
         for (var selector in config) {
             $(selector).chosen(config[selector]);
         }
-    });
-    $(function () {
-        getDinner(1, true);
-        count = 0;
 
-        function getDinner(page, init) {
+    var count=0;
+    $('#btn_search').click(function () {
+        getDinner(1, true);
+    });
+    getDinner(1, true);
+    function getDinner(page, init) {
             $.ajax({
-                url: '/dinner/dis_dinner/',
-                data: {'page': page, 'total': 2},
+                url: '/dinner/dis_dinner/?page='+page+'&total='+2,
+                data: $('#search_form').serialize(),
                 type: 'get',
                 dataType: 'json',
                 success: function (response) {
+                    console.info(response)
                     $('#dinner_list').html('');
-                    console.info(response.result.data)
                     $.each(response.result.data, function (index, item) {
                         count = response.result.count;
                         var data = item;
@@ -176,7 +174,7 @@
                             '<a href="personal_center/detail.html"><img src="/media/' + data.activities_photo + '"></a>\n' +
                             '<div class="bottominfo">\n' +
                             '<span class="label"><a href="javascript:;">' + data.activities_play + '</a>\n' +
-                            '<a href="/dinner/sing_up/" class="Sign_up">我要报名</a>\n' +
+                            '<a href="/dinner/sing_up/?id='+data.id+'" class="Sign_up">我要报名</a>\n' +
                             '</div>\n' +
                             '</div>\n' +
                             '<div class="active-info">\n' +
@@ -198,7 +196,6 @@
                 }
             })
         }
-
         function initPage() {
             $('.m-box').pagination({
                 pageCount: count,
@@ -213,27 +210,7 @@
                 }
             });
         }
-    });
-    $(function () {
-        $('#btn_search').click(function () {
-            $.ajax({
-                url:'/dinner/dinner_list/',
-                type:'get',
-                dataType:'json',
-                //data:new FormData($('#search_form')[0]), post请求
-                data:$('#search_form').serialize(),
-                contentType:false,
-                processData:false,
-                success:function (response_data) {
-                    console.info(response_data)
-                    {#$('#product_list').html('');#}
-                    {#$.each(response_data.data,function (index,item) {#}
-                    {#    $('#product_list').append('<tr><td>'+item.name+'</td><td>'+item.price+'</td></tr>')#}
-
-                }
-            })
-        })
-    })
+        });
 </script>
 </body>
 </html>

@@ -1,10 +1,15 @@
+import math
+
 from django.contrib import auth
+from django.core.paginator import Paginator
+from django.forms import model_to_dict
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views import View
 
+from dinner.models import DinnerInfo
 from polls.cache_img import get_cache_code_info
 from polls.forms import MyUserForm, LoginForm
 from polls.models import MyUser
@@ -73,5 +78,37 @@ class FindPassword(View):
 
         print(find_email)
         return JsonResponse('000')
+
+def dinner_home_fenye(request):
+    result = {
+        'count': 0,
+        'data': [],
+        'total': 5,
+        'page': 1
+    }
+    data = request.GET
+    print(data)
+    dinner_list = DinnerInfo.objects.all()
+    total = int(request.GET.get('total', '5'))
+    paginator = Paginator(dinner_list, total)
+    page = request.GET.get('page', 1)
+    contacts = paginator.get_page(page)
+    data_list = []
+    for obj in contacts:
+        data = model_to_dict(obj)
+        data['username'] = obj.user_id.username  # 用户名
+        data['price'] = obj.price  # 饭局价格
+        data['activities_play'] = obj.activities_play  # 活动玩法
+        data['intro'] = obj.intro  # 饭局简介
+        data['dinnername'] = obj.dinner_title  # 饭局标题
+        data['head'] = str(obj.user_id.head_image)  # 用户头像
+        data['activities_photo'] = str(obj.activities_photo)  # 活动照片
+        data_list.append(data)
+    result['count'] = math.ceil(paginator.count / total)
+    result['data'] = data_list
+    result['page'] = page
+    # 模型分页
+    return JsonResponse({'result': result})
+
 
 

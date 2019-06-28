@@ -42,9 +42,7 @@
                         <option>2人</option>
                     </select>
                 </div>
-                <input type="button" class="button search-button" id="button_search" value="搜索">
-
-
+                <a  class="button search-button" href="/active/" >搜索</a>
             </form>
             <div class="hot-key fl">热门搜索：
                 <a href="/active/">早餐</a>
@@ -186,25 +184,5 @@
     for (var selector in config) {
         $(selector).chosen(config[selector]);
     }
-    $(function () {
-        $('#button_search').click(function () {
-            $.ajax({
-                url:'/dinner/dinner_query/',
-                type:'post',
-                dataType:'json',
-                //data:new FormData($('#search_form')[0]), post请求
-                data:$('#search_form').serialize(),
-                contentType:false,
-                processData:false,
-                success:function (response_data) {
-                    $('#product_list').html('');
-                    $.each(response_data.data,function (index,item) {
-                        $('#product_list').append('<tr><td>'+item.number+'</td><td>'+item.price+'</td></tr>')
-                    })
-                }
-            })
-        })
-    })
-
 </script>
 </html>

@@ -61,14 +61,14 @@
 
     <div class="aside fr">
         <div class="pd15">
-            <div class="userimg"><img {{ request.user.head_image }} ><i></i></div>
+            <div class="userimg"><img src="/media/{{ request.user.head_image }}"  ><i></i></div>
             <div class="user-level tc">{{ request.user.username }} <em></em><em></em><em></em></div>
             <div class="tc"><a href="javascript:;" class="button btn-control btn-follow"> + 关注</a><a href="javascript:;"
                                                                                                      class="button btn-control btn-sent"><em
                     class="myfont f18">&#xe63f;</em> 私信</a></div>
-            <div class="Praise tc">老师，中国，陕西 <em>&#xe61d;</em><em>&#xe61d;</em><em>&#xe61d;</em></div>
+            <div class="Praise tc"><em>{{ request.user.career }}、{{ request.user.address }}</em></div>
 
-            <div class="txtwrap tc"><h1 class="f16">个人简介</h1>既能安静又能活泼，既能淑女又能犯二，<br>既能女汉子又能小清新～～～</div>
+            <div class="txtwrap tc"><h1 class="f16">个人简介</h1>{{ request.user.intro }}</div>
             <h1 class="f16">关注 4</h1>
             <ul class="followlist clearfix">
                 <li><a href="#"><img src="/static/upload/img12.png"></a></li>
@@ -87,7 +87,6 @@
     </div>
 </div>
 <script src="/static/js/jquery.pagination.js"></script>
-
 <script type="text/javascript">
     $(document).ready(function ($) {
         //select 样式美化
@@ -103,7 +102,7 @@
         count = 0;
         function getDinner(page, init) {
             $.ajax({
-                url: '/dinner/dis_dinner/',
+                url: '/polls/home_fenye/',
                 data: {'page': page, 'total': 2},
                 type: 'get',
                 dataType: 'json',
@@ -118,7 +117,7 @@
                             '<a href="home.html" class="fans img"><img src="/media/'+data.head+'"></a>\n' +
                             '<div class="post-body">\n' +
                             '<div class="post-header clearfix">\n' +
-                            '<a href="home.html" class="name">' + data.name + '</a>' + data.dinnername + '</div>\n' +
+                            '<a href="home.html" class="name">' + data.username + '</a>' + data.dinnername + '</div>\n' +
                             '<div class="Participate children">\n' +
                             '<div class="item">\n' +
                             '<div class="bd">\n' +

@@ -6,7 +6,7 @@ from polls.models import MyUser
 
 
 class SingDinner(models.Model):
-    user = models.ForeignKey(MyUser,on_delete=models.PROTECT)
+    sing_user = models.ForeignKey(MyUser,on_delete=models.PROTECT)
     dinner = models.ForeignKey(DinnerInfo,on_delete=models.PROTECT)
     apply_reason = models.CharField(max_length=100)
     remark = models.CharField(max_length=100)

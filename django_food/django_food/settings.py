@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'common.public_middleware.MyAuthMiddleware',
+    'common.public_middleware.MyAuthMiddleware',
 
 ]
 
@@ -77,7 +77,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'django_food.wsgi.application'
 
 SESSION_ENGINE="django.contrib.sessions.backends.file"
-SESSION_FILE_PATH="E:\session"
+SESSION_FILE_PATH="C:\session"
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 #

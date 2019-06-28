@@ -29,7 +29,7 @@
 <div class="wrap">
     <div class="sign-title tc">
         <h1>我要申请报名</h1>
-        亲爱的<a href="#" class="o">{{ request.user.username }}</a>，欢迎申请<span class="o">热红酒</span>
+        亲爱的<a href="#" class="o">{{ request.user.username }}</a>，欢迎申请<span class="o">{{ id }}热红酒</span>
     </div>
 
     <div class="membox clearfix">
@@ -44,6 +44,7 @@
     </div>
 
     <form class="Application mt30" id="sing_form" enctype="multipart/form-data" method="post">
+        {% csrf_token %}
         <table class="apptab">
             <tr>
                 <th><em class="ico"></em>申请理由：</th>
@@ -58,10 +59,11 @@
                 <td>
                     <p class="clearfix">(是否有忌口和过敏问题）</p>
                     <textarea name="remark" cols="" rows="" class="boxw TextArea"></textarea>
+                    <span id="my_error" style="color: red;display: inline-block;margin-left: 11px;}"></span>
                     <div class="Release-submit tl">
                         <input name="" type="checkbox" value=""> 我已阅读并同意<a href="#" class="o">《17素材服务条款》</a>
                         <p class="mt20">
-                            <input type="button" name="sing_button" value="提交" class="button btn-submit Appbtn"
+                            <input type="button" id="sing_button" value="提交" class="button btn-submit Appbtn">
                             <a href="/dinner/home/" class="button btn-reset Appbtn">取消</a>
                         </p>
                     </div>
@@ -126,15 +128,25 @@
 <div class="foot tc">Copyright © 2003-2015 17素材, All Rights Reserved</div>
 
 <script type="text/javascript">
-    $(document).ready(function ($) {
-        //select 样式美化
-        var config = {
-            '.chosen-select-no-single': {disable_search_threshold: 10}
-        };
-        for (var selector in config) {
-            $(selector).chosen(config[selector]);
-        }
-    });
+    $('#sing_button').click(function () {
+        $.ajax({
+            url:'/dinner/sing_up/',
+            type:'post',
+            data:new FormData($('#sing_form')[0]),
+            cache:false,
+            processData:false,
+            contentType:false,
+            success: function (data) {
+                if(data.status=='fail'){
+                    $('#my_error').text(data.msg)
+                }else if(data.status=='success'){
+                    window.location.href='/dinner/sing_success/';
+                }
+            }
+        })
+    })
+
+
 </script>
 </body>
 </html>

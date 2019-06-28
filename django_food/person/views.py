@@ -51,3 +51,6 @@ def my_messages(request):
 
 def verified_bind_done(request):
     return render(request,'personal_center/Verified-bind-done.html')
+
+def modify_password(request):
+    return render(request,'personal_center/pwd.html')
