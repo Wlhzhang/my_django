@@ -16,9 +16,7 @@
         <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
                 <ul class="topslide">
                     <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
-                    <li><em>&#xe63d;</em><a href="/person/message/">消息中心<s>3</s></a></li>
                     <li><em>&#xe63c;</em><a href="/dinner/join_dinner/">饭局管理</a></li>
-                    <li><em>&#xe63e;</em><a href="/person/fans/">我的好友</a></li>
                     <li><em>&#xe611;</em><a href="/polls/logout/">退出</a></li>
                 </ul>
             </div>
@@ -33,8 +31,9 @@
     <form id="find_form" class="Application tc" action="" enctype="application/x-www-form-urlencoded" method="post">
         {% csrf_token %}
         <p class="f18">请输入邮箱地址：<input type="text" name="find_password_mail" class="inputmail"></p>
+        <span id="my_error"></span>
         <div class="Release-submit">
-            <input type="button" name="find_password_btn" value="下一步" class="button btn-submit Appbtn">
+            <input type="button" id="find_password_btn" value="下一步" class="button btn-submit Appbtn">
         </div>
     </form>
 </div>
@@ -102,13 +101,12 @@
             processData: false,
             contentType: false,
             success: function (data) {
-                console.info(data);
-                {#if(data.status=='fail'){#}
-                {#    $('#my_error').text(data.msg)#}
-                {#else if(data.status=='success')#}
-                {#    alert('登录成功');#}
-                {#    window.location.href='/home/';#}
-
+                if (data.status == 'fail') {
+                    $('#my_error').text(data.msg)
+                } else if (data.status == 'success') {
+                    alert('验证成功');
+                    window.location.href = '//';
+                }
             }
         })
     })

@@ -20,6 +20,7 @@ def get_code(request):
     request.session['code'] = code
     return HttpResponse(img.getvalue(),content_type='image/png')
 
+# 登录
 class Login(View):
     def get(self,request,*args,**kwargs):
         return render(request,'polls/login.html')
@@ -43,6 +44,7 @@ def logout(request):
     auth.logout(request)  #这一步就相当于直接session.flush()
     return redirect('/')
 
+# 注册
 class Register(View):
     def get(self,request,*args,**kwargs):
         return render(request, 'polls/register.html')
@@ -64,21 +66,27 @@ class Register(View):
         else:
             return JsonResponse({'status':'form_error','msg':'验证格式失败'})
 
-def forget_password(request):
-    return render(request, 'polls/forget_password.html')
-
+# 通过邮箱找回密码
 class FindPassword(View):
     def get(self,request,*args,**kwargs):
         return render(request,'polls/forgot.html')
     def post(self,request,*args,**kwargs):
-        user = MyUser.objects.all()
-        find_email = request.POST.get('find_password_mail')
-        # if MyUser.email == find_email:
-        #     id = MyUser.
-
+        find_email = request.POST.get('find_password_mail') # 接收前端返回的数据
         print(find_email)
-        return JsonResponse('000')
 
+        if find_email != None:# 如果输入邮箱为空，提示输入错误
+            # 取出数据库与输入邮箱相匹配的用户信息
+            user_info = MyUser.objects.filter(email=find_email)
+            # 如果用户信息为空，提示该邮箱未注册
+            print(user_info.values())
+            if user_info != None:
+                return JsonResponse({'status': 'success'})
+            else:
+                return JsonResponse({'status': 'fail', 'msg': '该邮箱未注册'})
+        else:
+            return JsonResponse({'status': 'fail', 'msg': '输入不能为空'})
+
+# 我的饭局首页分页
 def dinner_home_fenye(request):
     result = {
         'count': 0,

@@ -29,22 +29,19 @@
         <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
                 <ul class="topslide">
                     <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
-                    <li><em>&#xe63d;</em><a href="/person/message/">消息中心<s>3</s></a></li>
                     <li><em>&#xe63c;</em><a href="/dinner/join_dinner/">饭局管理</a></li>
-                    <li><em>&#xe63e;</em><a href="/person/fans/">我的好友</a></li>
                     <li><em>&#xe611;</em><a href="/polls/logout/">退出</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+
 <div class="activewrap wrap clearfix">
     <div class="section fl">
         <form action="/dinner/dinner_list/" class="Condition clearfix" id="search_form" enctype="multipart/form-data" method="post">
             <div>
-                <p class="current">活动方式:&nbsp;<input  name="activities_play">&nbsp;&nbsp; 先到先得&nbsp;双向选择&nbsp; 大数据匹配</p>
-            </div>
-            <div>
+                {{ id }}
                 <label>价格:</label>
                 <input type="number" name="price__gte">
                 <label>--</label>
@@ -171,7 +168,7 @@
                         $('#dinner_list').append(
                             '<li>\n' +
                             '<div class="img">\n' +
-                            '<a href="personal_center/detail.html"><img src="/media/' + data.activities_photo + '"></a>\n' +
+                            '<p href="personal_center/detail.html"><img src="/media/' + data.activities_photo + '"></p>\n' +
                             '<div class="bottominfo">\n' +
                             '<span class="label"><a href="javascript:;">' + data.activities_play + '</a>\n' +
                             '<a href="/dinner/sing_up/?id='+data.id+'" class="Sign_up">我要报名</a>\n' +
@@ -179,13 +176,13 @@
                             '</div>\n' +
                             '<div class="active-info">\n' +
                             '<div class="user">\n' +
-                            ' <a href="#" class="userimg"><img src="/media/' + data.head + '"></a>\n' +
-                            ' <a href="#">' + data.username + '</a><em class="user-level"></em>\n' +
+                            ' <p href="#" class="userimg"><img src="/media/' + data.head + '"></p>\n' +
+                            ' <p href="#">' + data.username + '</p><em class="user-level"></em>\n' +
                             '<em class="user-level"></em>\n' +
                             ' <em class="user-level"></em>\n' +
                             '</div>\n' +
                             '<div class="txt">' + data.intro + '</div>\n' +
-                            '<span class="o">' + data.price + '元/每人(6位)</span>\n' +
+                            '<span class="o">' + data.price + '元/每人('+data.number+'位)</span>\n' +
                             '</div>\n' +
                             '</li>\n'
                         )

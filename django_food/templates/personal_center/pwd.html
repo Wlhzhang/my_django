@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>个人设置</title>
+    <title>修改密码</title>
     {% include 'common/public_css_js.html' %}
 </head>
 <body>
@@ -16,9 +16,7 @@
         <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
                 <ul class="topslide">
                     <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
-                    <li><em>&#xe63d;</em><a href="/person/message/">消息中心<s>3</s></a></li>
                     <li><em>&#xe63c;</em><a href="/dinner/join_dinner/">饭局管理</a></li>
-                    <li><em>&#xe63e;</em><a href="/person/fans/">我的好友</a></li>
                     <li><em>&#xe611;</em><a href="/polls/logout/">退出</a></li>
                 </ul>
             </div>
@@ -33,50 +31,57 @@
   <div class="section fl">
     <div class="location tr"><a href="/person/get_men/">基本资料</a><a href="/person/modify_password/" class="current">修改密码</a></div>
     <div class="pd20">
+        <form class="pd20" id="modify_password" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
       <table class="baseinfo">
         <tr>
           <th>原始密码：</th>
-          <td><input type="password" value="" class="baseipt"><span class="ico right"></span></td>
+          <td><input type="password" name="original_password" class="baseipt"></td>
         </tr>
         <tr>
           <th>新密码：</th>
-          <td><input type="password" value="" class="baseipt"></td>
+          <td><input type="password" name="new_password" class="baseipt"></td>
         </tr>
         <tr>
           <th>确认密码：</th>
-          <td><input type="password" value="" class="baseipt"><span class="ico wrong"></span><span class="f12">两次密码输入不一致</span></td>
+          <td><input type="password" name="confirm_password" class="baseipt"><span id="error_one" class="f12"></span></td>
         </tr>
         <tr>
           <th>&nbsp;</th>
-          <td><button type="button" name="save" value="" class="button btn-save">修改</button></td>
+
+          <td><span id="error_two"></span><input type="button" id="change_password_button" value="确认修改" class="button btn-save"></td>
         </tr>
       </table>
+    </form>
     </div>
   </div>
-  <div class="aside fr">
-    <div class="pd15">
-      <div class="userimg"><img src="/static/upload/img12.png"><i></i></div>
-      <div class="user-level tc">大郭郭呐 <em></em><em></em><em></em></div>
-      <div class="tc"><a href="javascript:;" class="button btn-control btn-follow"> + 关注</a><a href="javascript:;" class="button btn-control btn-sent"><em class="myfont f18">&#xe63f;</em> 私信</a></div>
-      <div class="Praise tc">老师，中国，陕西 <em>&#xe61d;</em><em>&#xe61d;</em><em>&#xe61d;</em></div>
-      
-      <div class="txtwrap tc"><h1 class="f16">个人简介</h1>既能安静又能活泼，既能淑女又能犯二，<br>既能女汉子又能小清新～～～</div>
-      <h1 class="f16">关注 4</h1>
-      <ul class="followlist clearfix">
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-      </ul>
-      <h1 class="f16">粉丝 4</h1>
-      <ul class="followlist bd0 clearfix">
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
-      </ul>
+    <div class="aside fr">
+        <div class="pd15">
+            <div class="userimg"><img src="/media/{{ request.user.head_image }}"><i></i></div>
+            <div class="user-level tc">{{ request.user.username }} <em></em><em></em><em></em></div>
+            <div class="tc"><a href="javascript:;" class="button btn-control btn-follow"> + 关注</a><a href="javascript:;"
+                                                                                                     class="button btn-control btn-sent"><em
+                    class="myfont f18">&#xe63f;</em> 私信</a></div>
+            <div class="Praise tc"><em>{{ request.user.career }}， {{ request.user.address }}</em></div>
+
+            <div class="txtwrap tc"><h1 class="f16">个人简介</h1>{{ request.user.intro }}</div>
+            <h1 class="f16">关注 4</h1>
+            <ul class="followlist clearfix">
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+            </ul>
+            <h1 class="f16">粉丝 4</h1>
+            <ul class="followlist bd0 clearfix">
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+                <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+            </ul>
+        </div>
     </div>
-  </div>
+
 </div>
 
 <script type="text/javascript">
@@ -89,6 +94,29 @@ $(document).ready(function($){
 		$(selector).chosen(config[selector]);
 	}
 });
+    $(function () {
+        $('#change_password_button').click(function () {
+             $.ajax({
+                url:'/person/modify_password/',
+                type:'post',
+                data:new FormData($('#modify_password')[0]),
+                 cache:false,
+                 processData:false,
+                 contentType:false,
+                 success:function (data) {
+                     if(data.status == 'success'){
+                         alert('密码修改成功，请重新登录');
+                         window.location.href = '/polls/login/'
+                     }else if (data.status == 'fail_one'){
+                         $('#error_one').text(data.msg)
+                     } else if (data.status == 'fail_two') {
+                         $('#error_two').text(data.msg)
+                     }
+                 }
+            })
+        })
+    })
+
 </script>
 </body>
 </html>

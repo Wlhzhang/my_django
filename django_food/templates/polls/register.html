@@ -65,7 +65,6 @@
                  contentType:false,
                  success:function (data) {
                      if(data.status == 'success'){
-                         alert('注册成功，去登陆');
                          window.location.href = '/polls/login/'
                      }else if (data.status == 'password_fail'){
                          $('#error_two').text(data.msg)

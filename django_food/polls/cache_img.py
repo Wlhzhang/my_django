@@ -37,7 +37,7 @@ from django_food.settings import BASE_DIR
 
 def get_cache_code_info():
     resule = ''
-    list_info='QWERTYUPKMJNHBGVFCDXSZA123456789'
+    list_info='azxswedcvftgbnhyujmkp'
     for i in range(1 , 5):
         resule += random.choice(list_info)
     # 获取一个Image对象，参数分别是RGB模式。宽160，高30，随机颜色

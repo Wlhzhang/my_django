@@ -10,15 +10,13 @@
     <div class="wrap clearfix">
         <a href="" class="logo indent">logo</a>
         <div class="headr fr">
-            <a href="/dinner/release/"><em><img src=""></em> &nbsp;&nbsp;发布我的饭局</a>
+            <a href="/dinner/release/"><em><img src="/static/images/sb.png"></em> &nbsp;&nbsp;发布我的饭局</a>
             <div class="user">
         <span class="clearfix"><span class="userimg"><img src="/media/{{ request.user.head_image }}"><i></i></span>
         <a href="javascript:;" class="fr">{{ request.user.username }}  <em>&#xe607;</em></a></span>
                 <ul class="topslide">
                     <li><em>&#xe627;</em><a href="/person/get_men/">个人设置</a></li>
-                    <li><em>&#xe63d;</em><a href="/person/message/">消息中心</a></li>
                     <li><em>&#xe63c;</em><a href="/dinner/join_dinner/">饭局管理</a></li>
-                    <li><em>&#xe63e;</em><a href="/person/fans/">我的好友</a></li>
                     <li><em>&#xe611;</em><a href="/polls/logout/">退出</a></li>
                 </ul>
             </div>
@@ -46,7 +44,9 @@
     <form class="Application mt30" id="sing_form" enctype="multipart/form-data" method="post">
         {% csrf_token %}
         <table class="apptab">
+            <td><span >饭局编号:&nbsp;&nbsp;&nbsp;&nbsp;{{ id }}</span></td>
             <tr>
+
                 <th><em class="ico"></em>申请理由：</th>
                 <td>
                     <p class="boxw clearfix"><span class="fr">还可以输入<span class="o" id="textCount">90</span>字</span>(为了提高申请成功率，请如实填写）
