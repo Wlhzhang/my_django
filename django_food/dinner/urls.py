@@ -1,9 +1,10 @@
 from django.urls import path,re_path
 
 from dinner.views import join_dinner, management, Release, SingUp, sing_success, \
-    MyEncoder, DisDinner, my_dinner
+    MyEncoder, DisDinner, my_dinner, sing_dinner
 
 urlpatterns=[
+    re_path(r'^sing_dinner/$', sing_dinner, name='join_dinner'),
     re_path(r'^join_dinner/$',join_dinner,name='join_dinner'),
     re_path(r'^management/$', management, name='management'),
     re_path(r'^release/$', Release.as_view(), name='release'),

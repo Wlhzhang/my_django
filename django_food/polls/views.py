@@ -72,7 +72,6 @@ class FindPassword(View):
         return render(request,'polls/forgot.html')
     def post(self,request,*args,**kwargs):
         find_email = request.POST.get('find_password_mail') # 接收前端返回的数据
-        print(find_email)
 
         if find_email != None:# 如果输入邮箱为空，提示输入错误
             # 取出数据库与输入邮箱相匹配的用户信息

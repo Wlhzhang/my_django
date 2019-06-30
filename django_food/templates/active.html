@@ -160,7 +160,6 @@
                 type: 'get',
                 dataType: 'json',
                 success: function (response) {
-                    console.info(response)
                     $('#dinner_list').html('');
                     $.each(response.result.data, function (index, item) {
                         count = response.result.count;

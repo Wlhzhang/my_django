@@ -23,6 +23,23 @@ from person.models import SingDinner
 def join_dinner(request):
     return render(request,'dining_center/Dinner.html')
 
+# 报名的饭局信息
+def sing_dinner(request):
+    if request.method == 'GET':
+        sing_infos = SingDinner.objects.filter(sing_user=request.user)
+        data = []
+        # dinner_info = DinnerInfo.objects.filter(id=sing_info.dinner_id)
+        for sing_info in sing_infos:
+
+            result = {'dinner_title':sing_info.dinner.dinner_title,
+                    'price':sing_info.dinner.price,
+                    'number':sing_info.dinner.number,
+                    'activities_play':sing_info.dinner.activities_play,
+                    'activities_photo':str(sing_info.dinner.activities_photo),
+                    'intro':sing_info.dinner.intro}
+            data.append(result)
+        return JsonResponse({'data':data})
+
 def management(request):
     return render(request,'dining_center/Management.html')
 
