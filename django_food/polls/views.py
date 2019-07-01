@@ -11,7 +11,7 @@ from django.views import View
 
 from dinner.models import DinnerInfo
 from polls.cache_img import get_cache_code_info
-from polls.forms import MyUserForm, LoginForm
+from polls.forms import MyUserForm, LoginForm, EmailForm
 from polls.models import MyUser
 
 # 验证码
@@ -73,13 +73,11 @@ class FindPassword(View):
     def get(self,request,*args,**kwargs):
         return render(request,'polls/forgot.html')
     def post(self,request,*args,**kwargs):
-        find_email = request.POST.get('find_password_mail') # 接收前端返回的数据
-
-        if find_email != None:# 如果输入邮箱为空，提示输入错误
+        find_email =EmailForm(request.POST) # 接收前端返回的数据
+        if find_email.is_valid():# 如果输入邮箱为空，提示输入错误
             # 取出数据库与输入邮箱相匹配的用户信息
             user_info = MyUser.objects.filter(email=find_email)
             # 如果用户信息为空，提示该邮箱未注册
-            print(user_info.values())
             if user_info != None:
                 return JsonResponse({'status': 'success'})
             else:

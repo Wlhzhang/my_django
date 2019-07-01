@@ -41,3 +41,6 @@ class LoginForm(forms.Form):
             if re.findall(regex,self.cleaned_data["password"]) is None:
                 raise forms.ValidationError('密码格式不正确')
             return self.cleaned_data["password"]
+
+class EmailForm(forms.Form):
+    find_password_mail = forms.EmailField(label='验证邮箱')
