@@ -6,6 +6,7 @@ from django.shortcuts import render,get_object_or_404
 from django.views import View
 
 from person.forms import MyUserModifyForm
+from person.models import City
 from polls.models import MyUser
 
 # 添加个人资料
@@ -24,9 +25,20 @@ class GetMen(View):
             # MyUser.objects.filter(id=request.user.id)
             # forms.user = request.user
             # form_file = user(**forms.cleaned_data)
+            city_list = []
+            provinces = City.objects.filter(id=forms.cleaned_data['province']).values('name')
+            citys = City.objects.filter(id=forms.cleaned_data['city']).values('name')
+            zones = City.objects.filter(id=forms.cleaned_data['zone']).values('name')
+            city_list.append(provinces)
+            city_list.append(citys)
+            city_list.append(zones)
             user.head_image = forms.cleaned_data['head_image']
-            user.address = forms.cleaned_data['address']
-            user.head_image = forms.cleaned_data['head_image']
+            b = []
+            for obj in city_list:
+                a = obj.first()
+                b.append(a['name'])
+            user.address = b
+            user.sex = forms.cleaned_data['sex']
             user.intro = forms.cleaned_data['intro']
             user.career = forms.cleaned_data['career']
             user.save()
@@ -65,3 +77,10 @@ class ModifyPassword(View):
                 return JsonResponse({'status': 'fail_two', 'msg': '密码不能为空'})
         else:
             return JsonResponse({'status':'fail_two','msg':'原密码错误'})
+
+def get_jilian(request):
+    data = request.GET
+    parent_id = data.get('parent_id')
+    city_type = data.get('city_type')
+    result = City.objects.filter(parent_id=parent_id,city_type=city_type).values('id','name')
+    return JsonResponse({'result':list(result)})

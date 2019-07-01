@@ -20,7 +20,7 @@ class MyUserManager(BaseUserManager):
             username,
             password=password
         )
-        user.is_admin = True
+        user.is_admin = False
         user.save(using=self._db)
         return user
 
@@ -32,7 +32,8 @@ class MyUser(AbstractBaseUser):
     career = models.CharField('职业',null=True,max_length=50)
     address = models.CharField('地址',null=True,max_length=50)
     intro = models.CharField('简介',null=True,max_length=200)
-    is_admin = models.BooleanField
+    is_active = models.BooleanField(default=True)
+    is_admin = models.BooleanField(default=False)
 
     objects = MyUserManager()
 
@@ -54,3 +55,5 @@ class MyUser(AbstractBaseUser):
 
     class Meta:
         db_table = 'user'
+        verbose_name = '用户信息表'
+        verbose_name_plural = verbose_name

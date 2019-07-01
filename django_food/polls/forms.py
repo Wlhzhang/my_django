@@ -17,7 +17,7 @@ class MyUserForm(forms.ModelForm):
     def clean_username(self):
         regex = r'\w{4,8}'
         if re.findall(regex, self.cleaned_data["username"]) is None:
-            raise forms.ValidationError('输入格式不正确')
+            raise forms.ValidationError('用户名格式不正确')
         return self.cleaned_data["username"]
 
     def clean_my_file(self):
@@ -34,10 +34,10 @@ class LoginForm(forms.Form):
         def clean_username(self):
             regex=r'\w{4,8}'
             if re.findall(regex,self.cleaned_data["username"]) is None:
-                raise forms.ValidationError('输入格式不正确')
+                raise forms.ValidationError('用户名格式不正确')
             return self.cleaned_data["username"]
         def clean_password(self):
-                regex=r'\w{5,10}'
-                if re.findall(regex,self.cleaned_data["password"]) is None:
-                    raise forms.ValidationError('输入格式不正确')
-                return self.cleaned_data["password"]
+            regex=r'\w{5,10}'
+            if re.findall(regex,self.cleaned_data["password"]) is None:
+                raise forms.ValidationError('密码格式不正确')
+            return self.cleaned_data["password"]

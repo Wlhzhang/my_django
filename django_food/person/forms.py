@@ -8,8 +8,11 @@ class MyUserModifyForm(forms.ModelForm):
     class Meta:
         model = MyUser
         fields = (
-            'head_image','sex','career','address','intro'
+            'head_image','sex','career','intro'
         )
+    province = forms.CharField(max_length=50)
+    city = forms.CharField(max_length=50)
+    zone = forms.CharField(max_length=50)
 
 class SingForm(forms.ModelForm):
     class Meta:

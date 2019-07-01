@@ -16,3 +16,8 @@ class DinnerInfo(models.Model):
     user_id = models.ForeignKey(MyUser,on_delete=models.PROTECT)
     class Meta:
         db_table = 'dinner_info'
+        verbose_name='饭局信息'
+        verbose_name_plural=verbose_name
+
+    def __str__(self):
+        return self.dinner_title

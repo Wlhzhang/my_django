@@ -2,32 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="734fab75-646e-495a-a902-e6a13a958072" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dinner/migrations/0002_auto_20190701_1526.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/migrations/0002_auto_20190701_1526.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/migrations/0002_auto_20190701_1526.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/public_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/public_middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dinner/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dinner/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dinner/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/dinner/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dinner/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dinner/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dinner/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dinner/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dinner/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dinner/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_food/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_food/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/person/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/person/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/person/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/person/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/person/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/person/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/person/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/person/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/person/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/person/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/cache_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/cache_img.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/active.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/active.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dining_center/Dinner.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Dinner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dining_center/Host.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dining_center/Management.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Management.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dining_center/Release.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Release.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dining_center/Sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Sign_up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dining_center/Success.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dining_center/Success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/personal_center/Message.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/personal_center/My_Messages.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/personal_center/Verified-bind-done.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/personal_center/men.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/men.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/personal_center/pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_center/pwd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/forget_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/modify_password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polls/forgot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/forgot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/polls/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/polls/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polls/register.html" afterDir="false" />
     </list>
@@ -43,19 +44,97 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dining_center/Dinner.html">
+        <entry file="file://$PROJECT_DIR$/templates/personal_center/men.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+            <state relative-caret-position="170">
+              <caret line="67" column="46" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/person/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dinner/views.py">
+        <entry file="file://$PROJECT_DIR$/person/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="378">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/person/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dinner/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/person/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dinner/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1431">
+              <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -63,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/active.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="157" column="54" lean-forward="true" selection-start-line="157" selection-start-column="54" selection-end-line="157" selection-end-column="54" />
+            <state relative-caret-position="243">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -89,20 +168,20 @@
       <find>static//static/images/</find>
       <find>images/</find>
       <find>label</find>
-      <find>upload/</find>
       <find>userimg</find>
       <find>get_mem</find>
-      <find>my_error</find>
-      <find>error_two</find>
-      <find>id</find>
+      <find>upload/</find>
+      <find>btn_search</find>
+      <find>search_form</find>
+      <find>sing_form</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/</replace>
       <replace>/static/js/</replace>
       <replace>/templates/active.html</replace>
       <replace>/static/images/</replace>
-      <replace>/static/upload/</replace>
       <replace>get_men</replace>
+      <replace>/static/upload/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -111,65 +190,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/polls/change_password.html" />
-        <option value="$PROJECT_DIR$/django_food/views.py" />
-        <option value="$PROJECT_DIR$/templates/personal_center/fans.html" />
-        <option value="$PROJECT_DIR$/templates/personal_center/phone-bind-done.html" />
-        <option value="$PROJECT_DIR$/templates/personal_center/upfiles.html" />
-        <option value="$PROJECT_DIR$/django_food/urls.py" />
-        <option value="$PROJECT_DIR$/templates/mem.html" />
-        <option value="$PROJECT_DIR$/polls/forms.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/polls/models.py" />
+        <option value="$PROJECT_DIR$/polls/cache_img.py" />
         <option value="$PROJECT_DIR$/polls/admin.py" />
         <option value="$PROJECT_DIR$/dinner/admin.py" />
         <option value="$PROJECT_DIR$/dinner/forms.py" />
         <option value="$PROJECT_DIR$/templates/测试.html" />
-        <option value="$PROJECT_DIR$/dinner/models.py" />
         <option value="$PROJECT_DIR$/templates/ceshi.html" />
         <option value="$PROJECT_DIR$/templates/dining_center/Host.html" />
         <option value="$PROJECT_DIR$/templates/personal_center/main.html" />
-        <option value="$PROJECT_DIR$/dinner/filters.py" />
         <option value="$PROJECT_DIR$/templates/personal_center/mem.html" />
+        <option value="$PROJECT_DIR$/templates/dining_center/Dinner.html" />
+        <option value="$PROJECT_DIR$/templates/dining_center/Management.html" />
+        <option value="$PROJECT_DIR$/templates/dining_center/Release.html" />
         <option value="$PROJECT_DIR$/templates/personal_center/applyhost.html" />
         <option value="$PROJECT_DIR$/templates/personal_center/detail.html" />
         <option value="$PROJECT_DIR$/templates/personal_center/Message.html" />
         <option value="$PROJECT_DIR$/templates/personal_center/My_Messages.html" />
         <option value="$PROJECT_DIR$/templates/personal_center/Verified-bind-done.html" />
-        <option value="$PROJECT_DIR$/static/css/css.css" />
-        <option value="$PROJECT_DIR$/django_food/settings.py" />
-        <option value="$PROJECT_DIR$/templates/polls/login.html" />
-        <option value="$PROJECT_DIR$/common/public_middleware.py" />
-        <option value="$PROJECT_DIR$/templates/polls/forget_password.html" />
-        <option value="$PROJECT_DIR$/polls/views.py" />
-        <option value="$PROJECT_DIR$/polls/urls.py" />
-        <option value="$PROJECT_DIR$/person/forms.py" />
-        <option value="$PROJECT_DIR$/polls/cache_img.py" />
-        <option value="$PROJECT_DIR$/templates/polls/register.html" />
         <option value="$PROJECT_DIR$/templates/polls/forgot.html" />
-        <option value="$PROJECT_DIR$/templates/polls/modify_password.html" />
+        <option value="$PROJECT_DIR$/static/css/css.css" />
         <option value="$PROJECT_DIR$/templates/personal_center/pwd.html" />
-        <option value="$PROJECT_DIR$/templates/dining_center/Success.html" />
-        <option value="$PROJECT_DIR$/templates/dining_center/Release.html" />
+        <option value="$PROJECT_DIR$/dinner/filters.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/templates/dining_center/Management.html" />
-        <option value="$PROJECT_DIR$/templates/personal_center/men.html" />
-        <option value="$PROJECT_DIR$/person/views.py" />
-        <option value="$PROJECT_DIR$/person/urls.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/dining_center/Success.html" />
         <option value="$PROJECT_DIR$/templates/active.html" />
-        <option value="$PROJECT_DIR$/dinner/urls.py" />
-        <option value="$PROJECT_DIR$/person/models.py" />
         <option value="$PROJECT_DIR$/templates/dining_center/Sign_up.html" />
+        <option value="$PROJECT_DIR$/templates/polls/forget_password.html" />
+        <option value="$PROJECT_DIR$/polls/forms.py" />
+        <option value="$PROJECT_DIR$/templates/polls/login.html" />
+        <option value="$PROJECT_DIR$/templates/polls/register.html" />
+        <option value="$PROJECT_DIR$/common/public_middleware.py" />
+        <option value="$PROJECT_DIR$/django_food/settings.py" />
+        <option value="$PROJECT_DIR$/polls/views.py" />
+        <option value="$PROJECT_DIR$/person/admin.py" />
+        <option value="$PROJECT_DIR$/dinner/models.py" />
+        <option value="$PROJECT_DIR$/polls/models.py" />
+        <option value="$PROJECT_DIR$/dinner/apps.py" />
+        <option value="$PROJECT_DIR$/dinner/__init__.py" />
+        <option value="$PROJECT_DIR$/polls/__init__.py" />
+        <option value="$PROJECT_DIR$/person/__init__.py" />
+        <option value="$PROJECT_DIR$/polls/apps.py" />
+        <option value="$PROJECT_DIR$/person/apps.py" />
+        <option value="$PROJECT_DIR$/polls/urls.py" />
+        <option value="$PROJECT_DIR$/dinner/urls.py" />
         <option value="$PROJECT_DIR$/dinner/views.py" />
-        <option value="$PROJECT_DIR$/templates/dining_center/Dinner.html" />
+        <option value="$PROJECT_DIR$/person/urls.py" />
+        <option value="$PROJECT_DIR$/templates/personal_center/men.html" />
+        <option value="$PROJECT_DIR$/person/test.py" />
+        <option value="$PROJECT_DIR$/person/models.py" />
+        <option value="$PROJECT_DIR$/person/forms.py" />
+        <option value="$PROJECT_DIR$/person/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="45" />
-    <option name="y" value="24" />
+    <option name="x" value="1028" />
+    <option name="y" value="2" />
     <option name="width" value="974" />
-    <option name="height" value="776" />
+    <option name="height" value="819" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -177,75 +256,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="dinner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="person" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="polls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="dining_center" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="personal_center" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_food" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="polls" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/djang618" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -253,10 +279,10 @@
       <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates\personal_center" />
       <recent name="E:\GitHub\my_django\django_food\templates\personal_center" />
       <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\polls" />
       <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates\polls" />
-      <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates\personal_center" />
       <recent name="C:\Users\admin\Desktop\study\github\my_django\django_food\templates\dining_center" />
     </key>
   </component>
@@ -272,7 +298,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django server.django_food">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="django_food" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/person" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/person/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="django_food" type="Python.DjangoServer" factoryName="Django server">
       <module name="django_food" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -297,6 +345,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -312,6 +365,7 @@
       <workItem from="1561377301912" duration="6754000" />
       <workItem from="1561511572656" duration="26059000" />
       <workItem from="1561551782771" duration="7523000" />
+      <workItem from="1561944906444" duration="22101000" />
     </task>
     <task id="LOCAL-00001" summary="注册成功，回去做登陆">
       <created>1561456822440</created>
@@ -331,28 +385,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98198000" />
+    <option name="totallyTimeSpent" value="125499000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49574107" visible="true" weight="0.22768533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49574107" visible="true" weight="0.24626866" />
       <window_info id="Structure" order="1" sideWeight="0.50425893" side_tool="true" weight="0.12934947" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.41396934" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49781182" visible="true" weight="0.2657581" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49848714" weight="0.3867121" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.21908894" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34056398" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22998296" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.4241908" />
-      <window_info anchor="bottom" id="manage.py@django_food" order="12" weight="0.3321976" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.47505423" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.41908008" />
+      <window_info anchor="bottom" id="manage.py@django_food" order="12" weight="0.20281996" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -361,22 +414,22 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49574107" visible="true" weight="0.15506808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49574107" visible="true" weight="0.17963752" />
       <window_info id="Structure" order="1" sideWeight="0.50425893" side_tool="true" weight="0.12934947" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.41396934" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.15672913" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.25383306" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.29826465" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3362256" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22998296" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="manage.py@django_food" order="12" weight="0.3492334" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.47505423" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.41908008" />
+      <window_info anchor="bottom" id="manage.py@django_food" order="12" weight="0.21908894" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -394,58 +447,27 @@
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Python.DjangoServer">
-        <watch expression="find_email.'find_password_mail' (99126200)" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://C:/Program Files/virtualenvhome/temp/Lib/site-packages/MySQLdb/connections.py</url>
+          <line>227</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/django_food$test.coverage" NAME="test Coverage Results" MODIFIED="1561972963640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/person" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-197143200/builtins.py">
+    <entry file="file://$PROJECT_DIR$/templates/dining_center/Release.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="301" column="7" lean-forward="true" selection-start-line="301" selection-start-column="7" selection-end-line="301" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/jquery-2.2.4.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ceshi.html" />
-    <entry file="file://$PROJECT_DIR$/templates/personal_center/fans.html" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/pathlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="1160" selection-start-line="1160" selection-end-line="1160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/personal_center/main.html" />
-    <entry file="file://$PROJECT_DIR$/templates/personal_center/upfiles.html" />
-    <entry file="file://$PROJECT_DIR$/polls/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dinner/filters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="176">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/cirtualenvhome/temp/Lib/site-packages/MySQLdb/cursors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="311" selection-start-line="311" selection-end-line="311" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/cirtualenvhome/temp/Lib/site-packages/MySQLdb/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="223" selection-start-line="223" selection-end-line="223" />
         </state>
       </provider>
     </entry>
@@ -459,344 +481,388 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/css.css">
+    <entry file="file://$PROJECT_DIR$/templates/personal_center/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="257" selection-start-line="257" selection-end-line="257" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_food/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dinner/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/cirtualenvhome/temp/Lib/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/cache_img.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/polls/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/polls/modify_password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/polls/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="70" column="30" lean-forward="true" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/personal_center/Verified-bind-done.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="176">
           <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/polls/forgot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="8" selection-start-line="8" selection-end-line="25" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/personal_center/My_Messages.html">
+    <entry file="file://$PROJECT_DIR$/templates/personal_center/Message.html" />
+    <entry file="file://$PROJECT_DIR$/templates/personal_center/My_Messages.html" />
+    <entry file="file://$PROJECT_DIR$/templates/personal_center/Verified-bind-done.html" />
+    <entry file="file://C:/Program Files/virtualenvhome/temp/Lib/site-packages/django/contrib/sessions/backends/file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-547">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/personal_center/Message.html">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/encoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-485">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        <state relative-caret-position="1626">
+          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/virtualenvhome/temp/Lib/site-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/virtualenvhome/temp/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/personal_center/pwd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="-19">
+          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2121#2127#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/personal_center/detail.html">
+    <entry file="file://$PROJECT_DIR$/person/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1408">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
+        <state relative-caret-position="-324" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dining_center/Success.html">
+    <entry file="file://$PROJECT_DIR$/dinner/filters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="24" selection-end-column="6" />
+        <state relative-caret-position="216">
+          <caret line="8" column="72" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="72" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dining_center/Release.html">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="405">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/cirtualenvhome/temp/Lib/site-packages/django/views/generic/base.py">
+    <entry file="file://$PROJECT_DIR$/django_food/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dining_center/Host.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-880">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dining_center/Management.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="141" column="73" selection-start-line="141" selection-start-column="73" selection-end-line="141" selection-end-column="73" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/personal_center/men.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="85" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#289#1301#0" />
-            <element signature="e#1506#2523#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_food/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#635#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dinner/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="129" column="37" selection-start-line="129" selection-start-column="37" selection-end-line="129" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/public_middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="1323">
+          <caret line="61" selection-start-line="61" selection-end-line="86" selection-end-column="10" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#480#612#0" />
-            <element signature="e#642#1458#0" />
-            <element signature="e#1597#2460#0" />
-            <element signature="e#2503#3215#0" />
-            <element signature="e#3264#4272#0" />
+            <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#3918#4151#0#HTML" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/cirtualenvhome/temp/Lib/site-packages/django/core/handlers/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/templates/polls/forgot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="27">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dining_center/Sign_up.html">
+    <entry file="file://$PROJECT_DIR$/static/css/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="132" column="34" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+        <state relative-caret-position="237">
+          <caret line="115" column="17" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dining_center/Success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
           <folding>
-            <element signature="e#1791#1797#0#HTML" expanded="true" />
-            <element signature="e#1797#1803#0#HTML" expanded="true" />
-            <element signature="e#1803#1809#0#HTML" expanded="true" />
-            <element signature="e#1809#1815#0#HTML" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/polls/forget_password.html" />
+    <entry file="file://$PROJECT_DIR$/polls/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/polls/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="72" column="40" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/polls/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="74" column="14" lean-forward="true" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/active.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="157" column="40" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#62#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dinner/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dinner/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="44" selection-start-column="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dinner/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dinner/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        <state relative-caret-position="108">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dining_center/Dinner.html">
+    <entry file="file://$PROJECT_DIR$/common/public_middleware.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+        <state relative-caret-position="243">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dining_center/Sign_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="139" column="40" lean-forward="true" selection-start-line="139" selection-start-column="40" selection-end-line="139" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dinner/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="162">
+          <caret line="72" column="51" lean-forward="true" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/active.html">
+    <entry file="file://$PROJECT_DIR$/person/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="157" column="54" lean-forward="true" selection-start-line="157" selection-start-column="54" selection-end-line="157" selection-end-column="54" />
+        <state relative-caret-position="351">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/django_food/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="e#635#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_food/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="144" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1431">
+          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/virtualenvhome/temp/Lib/site-packages/MySQLdb/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="223" selection-start-line="223" selection-end-line="223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/personal_center/men.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="67" column="46" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dinner/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dinner/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -72,6 +72,8 @@
             success: function (data) {
                 if(data.status=='fail'){
                     $('#my_error').text(data.msg)
+                }else if(data.status=='form_error'){
+                    $('#my_error').text(data.msg)
                 }else if(data.status=='success'){
                     window.location.href='/home/';
                 }

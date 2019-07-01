@@ -35,7 +35,7 @@ class Login(View):
                 else:
                     return JsonResponse({'status': 'fail', 'msg': '账号或密码错误'})
             else:
-                return JsonResponse({'status': 'fail', 'msg': '格式输入错误'})
+                return JsonResponse({'msg': '验证格式失败', 'status': 'form_error'})
         else:
             return JsonResponse({'status':'fail','msg':'验证码错误'})
 
@@ -64,7 +64,9 @@ class Register(View):
             else:
                 return JsonResponse({'status':'password_fail','msg':'两次密码输入不一致'})
         else:
-            return JsonResponse({'status':'form_error','msg':'验证格式失败'})
+            forms_error = form.errors.as_json()
+            return JsonResponse({'msg': '验证格式失败', 'data': forms_error, 'status': 'form_error'})
+            # return JsonResponse({'status':'form_error','msg':'验证格式失败'})
 
 # 通过邮箱找回密码
 class FindPassword(View):

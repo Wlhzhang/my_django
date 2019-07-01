@@ -3,11 +3,12 @@ import math
 from datetime import datetime, date
 from decimal import Decimal
 
+from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db.models import QuerySet
 from django.forms import model_to_dict
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views import View
@@ -43,19 +44,25 @@ def sing_dinner(request):
 def management(request):
     return render(request,'dining_center/Management.html')
 
+
+@login_required
 # 发布自己的饭局
-class Release(View):
-    def get(self,request,*args,**kwargs):
+def release(request):
+    if request.method == 'GET':
         return render(request,'dining_center/Release.html')
-    def post(self,request,*args,**kwargs):
-        dinner_form = DinnerInfoForm(request.POST,request.FILES)
-        if dinner_form.is_valid():
-            form_file = DinnerInfo(**dinner_form.cleaned_data)
-            form_file.user_id=request.user
-            form_file.save()
-            return JsonResponse({'status': 'success'})
-        else:
-            return JsonResponse({'status':'fail','msg':'输入有误'})
+    if request.method == 'POST':
+        try:
+            dinner_form = DinnerInfoForm(request.POST,request.FILES)
+            if dinner_form.is_valid():
+                form_file = DinnerInfo(**dinner_form.cleaned_data)
+                form_file.user_id=request.user
+                form_file.save()
+                return JsonResponse({'status': 'success'})
+            else:
+                return JsonResponse({'status':'fail','msg':'输入有误'})
+        except:
+            return render(request,'polls/login.html')
+
 
 # 饭局报名
 class SingUp(View):
@@ -100,6 +107,7 @@ class MyEncoder(json.JSONEncoder):
 
 # 分页查询
 class DisDinner(View):
+
     def fenye(self,contacts,paginator,page,total):
         result = {
             'count': 0,

@@ -30,7 +30,7 @@
     <div class="section fl">
         <div class="location tr"><a href="/person/get_men/" class="current">基本资料</a><a href="/person/modify_password/">修改密码</a></div>
 
-        <form class="pd20" id="modify_form" method="post" enctype="multipart/form-data">
+        <form class="pd20" id="modify_form" method="post" enctype="multipart/form-data" action="/person/get_jilian/">
             {% csrf_token %}
             <table class="baseinfo">
                 <tr>
@@ -64,14 +64,19 @@
                 </tr>
                 <tr>
                     <th>所在城市：</th>
-                    <td><input name="address" type="text"></td>
-{#                    <td><select style="width:154px;" class="chosen-select-no-single" tabindex="9">#}
-{##}
-{#                    </select><select style="width:154px;" class="chosen-select-no-single" tabindex="9">#}
-{##}
-{#                    </select><select style="width:154px;" class="chosen-select-no-single" tabindex="9">#}
-{##}
-{#                    </select></td>#}
+                    <td>
+                        <select name="province" id="sel_province">
+
+                        </select>
+
+                        <select name="city" id="sel_city">
+
+                        </select>
+
+                        <select name="zone" id="sel_zone">
+
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <th valign="top">个人简介：</th>
@@ -95,20 +100,6 @@
       <div class="Praise tc">{{ request.user.career }}、{{ request.user.address }} <em>&#xe61d;</em><em>&#xe61d;</em><em>&#xe61d;</em></div>
 
       <div class="txtwrap tc"><h1 class="f16">个人简介</h1>{{ request.user.intro }}</div>
-{#      <h1 class="f16">关注 4</h1>#}
-{#      <ul class="followlist clearfix">#}
-{#        <li><a href="#"><img src="/static/upload/img12.png"></a></li>#}
-{#        <li><a href="#"><img src="/static/upload/img12.png"></a></li>#}
-{#        <li><a href="#"><img src="/static/upload/img12.png"></a></li>#}
-{#        <li><a href="#"><img src="/static/upload/img12.png"></a></li>#}
-{#      </ul>#}
-{#      <h1 class="f16">粉丝 4</h1>#}
-{#      <ul class="followlist bd0 clearfix">#}
-{#        <li><a href="#"><img src="/static/upload/img12.png"></a></li>#}
-{#        <li><a href="#"><img src="/static/upload/img12.png"></a></li>#}
-{#        <li><a href="#"><img src="/static/upload/img12.png"></a></li>#}
-{#        <li><a href="#"><img src="/static/upload/img12.png"></a></li>#}
-{#      </ul>#}
     </div>
   </div>
 </div>
@@ -132,6 +123,44 @@
              }
          })
     })
+$(function () {
+    $.ajax({
+        url: '/person/get_jilian/',
+        data: {parent_id: '0', city_type: '1'},
+        success: function (response_data) {
+            $.each(response_data.result, function (index, item) {
+                $('#sel_province').append('<option value="' + item.id + '">' + item.name + '</option>')
+            });
+        }
+    });
+});
+$('#sel_province').change(function () {
+    $('#sel_city').html('');
+    var checkValue=$(this).val(); //获取Select选择的Value
+    $.ajax({
+       url:'/person/get_jilian/',
+        data:{parent_id:checkValue,city_type:'2'},
+        success:function (response_data) {
+            $.each(response_data.result,function (index,item) {
+                $('#sel_city').append('<option value="'+item.id+'">'+item.name+'</option>')
+            });
+        }
+    });
+});
+$('#sel_city').change(function () {
+    $('#sel_zone').html('');
+    var checkValue=$(this).val(); //获取Select选择的Value
+    $.ajax({
+       url:'/person/get_jilian/',
+        data:{parent_id:checkValue,city_type:'3'},
+        success:function (response_data) {
+            $.each(response_data.result,function (index,item) {
+                $('#sel_zone').append('<option value="'+item.id+'">'+item.name+'</option>')
+            });
+        }
+    });
+})
+
 
 </script>
 </body>
