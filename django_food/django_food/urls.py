@@ -29,4 +29,5 @@ urlpatterns = [
     path('person/', include(('person.urls', 'person'), namespace='person')),
     path('dinner/', include(('dinner.urls', 'person'), namespace='dinner')),
     re_path(r'^media/(?P<path>.*)$', serve, {'document_root':MEDIA_ROOT}),
+    # re_path(r'^api-auth/', include('rest_framework.urls'))
 ]

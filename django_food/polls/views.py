@@ -8,6 +8,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views import View
+from rest_framework import viewsets
 
 from dinner.models import DinnerInfo
 from polls.cache_img import get_cache_code_info
@@ -15,6 +16,9 @@ from polls.forms import MyUserForm, LoginForm, EmailForm
 from polls.models import MyUser
 
 # 验证码
+from polls.serializers import UserSerializer
+
+
 def get_code(request):
     img,code = get_cache_code_info()
     request.session['code'] = code
@@ -119,3 +123,6 @@ def dinner_home_fenye(request):
 
 
 
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = MyUser.objects.all()
+    serializer_class = UserSerializer

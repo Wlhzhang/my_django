@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_filters',
+    'rest_framework',
     'polls',
     'person',
     'dinner'
@@ -77,7 +78,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'django_food.wsgi.application'
 
 SESSION_ENGINE="django.contrib.sessions.backends.file"
-SESSION_FILE_PATH="C:\session"
+SESSION_FILE_PATH="E:\session"
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 #
@@ -142,4 +143,9 @@ STATICFILES_DIRS =[
 AUTH_USER_MODEL = 'polls.MyUser'
 
 MEDIA_URL='/media/'
+
 MEDIA_ROOT=os.path.join(BASE_DIR,"media")
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
